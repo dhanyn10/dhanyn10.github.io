@@ -1,11 +1,3 @@
-@font-face{
-	font-family:'lobster';
-	src:url('Lobster-Regular.ttf') format('truetype');
-}
-@font-face{
-	font-family:'slabo';
-	src:url('Slabo27px-Regular.ttf') format('truetype');
-}
 body{
 	margin:0;
 }
@@ -18,18 +10,18 @@ body{
 	text-align:center;
 	display:block;
 	width:100%;
-	height:70px;
+	height:80px;
 	background:white;
 }
-.header-wrapper p{
+.header-wrapper h1{
 	display:inline;
 	padding:0;
-	font:normal 30px 'lobster',cursive;
+	font-family:'lobster';
 	color:#3498db;
-	line-height:70px;
+	line-height:80px;
 	text-shadow:1px 1px 2px #2c3e50;
 }
-.header-wrapper p:hover{
+.header-wrapper h1:hover{
 	cursor:pointer;
 	color:#e74c3c;
 }
@@ -46,17 +38,18 @@ body{
 	list-style:none;
 	margin:0;
 	padding:0;
-	border-bottom:4px solid #34495e;
-	-webkit-box-shadow:0px 2px 5px 0px rgba(44, 62, 80,1.0);
-	-moz-box-shadow:0px 2px 5px 0px rgba(44, 62, 80,1.0);
-	box-shadow:0px 2px 5px 0px rgba(44, 62, 80,1.0);
+	border-bottom:4px solid #1F5A7E;
+	-webkit-box-shadow:0px 2px 5px 0px rgb(31,90,126);
+	-moz-box-shadow:0px 2px 5px 0px rgb(31,90,126);
+	box-shadow:0px 2px 5px 0px rgb(31,90,126);
 }
 #navigasi li{
 	display:inline-block;
-	padding:0 8px;
+	font-family:'ubuntu-m-r';
+	padding:0 10px;
 	float:left;
 	position:relative;
-	border-right:1px solid #34495e;
+	border-right:1px solid #1F5A7E;
 }
 #navigasi li a{
 	text-decoration:none;
@@ -65,15 +58,64 @@ body{
 }
 #navigasi li:hover,
 #navigasi .active{
-	background:#34495e;
+	background:#1F5A7E;
+}
+.main-wrapper{
+	background:#2980b9;
+	padding:5px;
+}
+.main-wrapper div{
+	margin:1%;
 }
 #foto{
-	display:block;
-	width:100%;
+	display:inline-block;
+	width:48%;
 	height:300px;
-	background:#ecf0f1;
-<<<<<<< HEAD
+	outline:1px solid black;
 }
-=======
+#foto img{
+	text-align:center;
+	display:block;
+	width:auto;
+	height:100%;
 }
->>>>>>> origin/master
+#profil-singkat{
+	display:inline-block;
+	width:48%;
+	float:right;
+	outline:1px solid black;
+}
+#profil-singkat table{
+	background:white;
+	width:100%;
+}
+#profil-singkat table td{
+	vertical-align:top;
+}
+#profil-singkat ul{
+	padding:0 4px;
+}
+.footer-wrapper{
+	display:block;
+	background:#174B6C;
+	border-top:2px solid black;
+	height:200px;
+	color:white;
+}
+@media(max-width:1049px){
+	#foto,#profil-singkat{
+		display:block;
+		width:100%;
+		margin:0;
+		float:none;
+	}
+}
+@media(min-width:1050px){
+	#foto,#profil-singkat{
+		display:inline-block;
+		width:48%;
+	}
+	#profil-singkat{
+		float:right;
+	}
+}
