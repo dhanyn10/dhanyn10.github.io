@@ -82,7 +82,7 @@ body{
 #profil-singkat{
 	display:inline-block;
 	width:48%;
-	float:right;
+	float:right;z
 	outline:1px solid black;
 }
 #profil-singkat table{
