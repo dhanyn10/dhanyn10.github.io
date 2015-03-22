@@ -1,5 +1,5 @@
 body{
-	background:#8e44ad;
+	background:#3498db;
 	min-width:800px;
 	min-height:450px;
 	overflow:auto;
@@ -60,7 +60,7 @@ body{
 #bagian-utama{
 	outline:1px solid black;
 	height:600px;
-	background:#34495e;
+	background:#2ecc71;
 }
 #bagian-utama p{
 	width:100%;
@@ -72,18 +72,18 @@ body{
 	animation:fading 4s infinite;
 }
 @keyframes fading{
-	0%{background:#2980b9}
-	20%{background:#2ecc71}
-	60%{background:#1abc9c}
+	0%{background:#2c3e50}
+	20%{background:#95a5a6}
+	60%{background:#7f8c8d}
 	80%{background:#f39c12}
 	100%{background:#2980b9}
 }
 @-webkit-keyframes fading{
-	0%{background:#2980b9}
-	20%{background:#2ecc71}
-	60%{background:#1abc9c}
-	80%{background:#f39c12}
-	100%{background:#2980b9}
+	0%{background:#2c3e50}
+	20%{background:#95a5a6}
+	60%{background:#7f8c8d}
+	80%{background:#34495e}
+	100%{background:#c0392b}
 }
 #gambar-utama{
 	height:300px;
