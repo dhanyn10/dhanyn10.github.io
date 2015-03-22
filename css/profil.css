@@ -28,14 +28,11 @@ body{
 	margin:0;
 	padding:0;
 	list-style:none;
-	line-height:40px;
 	height:40px;
 	border-bottom:4px solid #177E36;
 	box-shadow:0 2px 5px 0 rgb(23,126,54);
 }
 #navigasi li{
-	display:inline-block;
-	padding:0 10px;
 	border-right:1px solid #177E36;
 	float:left;
 	font-family:'ubuntu-m-r';
@@ -43,10 +40,37 @@ body{
 #navigasi li:hover{
 	background:#177E36;
 }
-#navigasi a{
+#navigasi li a{
+	display:inline-block;
+	padding:0 10px;
 	text-decoration:none;
 	color:white;
+	line-height:40px;
 }
 #navigasi .active{
 	background:#177E36;
+}
+.main-wrapper{
+	display:block;
+	margin:10px;
+}
+.main-wrapper  table{
+	font-family:'ubuntu-m-r';
+	border-collapse: collapse;
+	background:white;
+}
+.main-wrapper table td{
+	font-size:20px;
+}
+.main-wrapper table tr{
+	line-height:25px;
+}
+.main-wrapper table tr:nth-child(even){
+	background:#bdc3c7;
+}
+.main-wrapper table #top{
+	background:#7f8c8d;
+}
+.main-wrapper table #top p{
+	transform:rotate(270deg);
 }

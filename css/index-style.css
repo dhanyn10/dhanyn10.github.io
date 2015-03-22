@@ -23,7 +23,6 @@ body{
 }
 .header-wrapper h1:hover{
 	cursor:pointer;
-	color:#e74c3c;
 }
 .navigasi{
 	display:block;
@@ -34,7 +33,6 @@ body{
 	line-height:40px;
 	height:40px;
 	position:relative;
-	z-index:1;
 	list-style:none;
 	margin:0;
 	padding:0;
@@ -44,14 +42,16 @@ body{
 	box-shadow:0px 2px 5px 0px rgb(31,90,126);
 }
 #navigasi li{
-	display:inline-block;
 	font-family:'ubuntu-m-r';
-	padding:0 10px;
 	float:left;
 	position:relative;
 	border-right:1px solid #1F5A7E;
 }
 #navigasi li a{
+	padding:0 10px;
+	display:inline-block;
+	line-height:40px;
+	height:40px;
 	text-decoration:none;
 	color:white;
 	font-family:normal 27px 'slabo';
@@ -68,54 +68,17 @@ body{
 	margin:1%;
 }
 #foto{
-	display:inline-block;
-	width:48%;
-	height:300px;
-	outline:1px solid black;
+	display:block;
+	text-align:center;
 }
 #foto img{
-	text-align:center;
-	display:block;
-	width:auto;
-	height:100%;
-}
-#profil-singkat{
-	display:inline-block;
-	width:48%;
-	float:right;
-	outline:1px solid black;
-}
-#profil-singkat table{
-	background:white;
-	width:100%;
-}
-#profil-singkat table td{
-	vertical-align:top;
-}
-#profil-singkat ul{
-	padding:0 4px;
+	width:200px;
+	height:auto;
+	border-radius:10px;
 }
 .footer-wrapper{
 	display:block;
-	background:#174B6C;
+	background:#34495E;
 	border-top:2px solid black;
-	height:200px;
-	color:white;
-}
-@media(max-width:1049px){
-	#foto,#profil-singkat{
-		display:block;
-		width:100%;
-		margin:0;
-		float:none;
-	}
-}
-@media(min-width:1050px){
-	#foto,#profil-singkat{
-		display:inline-block;
-		width:48%;
-	}
-	#profil-singkat{
-		float:right;
-	}
+	color:#BDC3C7;
 }
