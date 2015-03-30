@@ -6,3 +6,7 @@
 	font-family:'ubuntu-m-r';
 	src:url('fonts/UbuntuMono-R.ttf') format('truetype');
 }
+@font-face{
+	font-family:'aclonica';
+	src:url('fonts/Aclonica.ttf') format('truetype');
+}

@@ -59,6 +59,9 @@ body{
 	border-collapse: collapse;
 	background:white;
 }
+.main-wrapper table p{
+	margin:0;
+}
 .main-wrapper table td{
 	font-size:20px;
 }
@@ -68,9 +71,13 @@ body{
 .main-wrapper table tr:nth-child(even){
 	background:#bdc3c7;
 }
-.main-wrapper table #top{
+.main-wrapper table #basic-info{
 	background:#7f8c8d;
 }
-.main-wrapper table #top p{
+.main-wrapper table #basic-info p,
+.main-wrapper table #bahasa p{
 	transform:rotate(270deg);
+}
+.main-wrapper table #bahasa{
+	background:#e74c3c;
 }

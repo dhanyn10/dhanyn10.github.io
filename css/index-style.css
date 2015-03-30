@@ -67,14 +67,55 @@ body{
 .main-wrapper div{
 	margin:1%;
 }
-#foto{
+#deskripsi-utama{
 	display:block;
 	text-align:center;
+}
+#foto{
+	display:block;
+	width:150px;
+	height:150px;
+	border:1px solid black;
+	overflow:hidden;
+	margin:0 auto;
 }
 #foto img{
 	width:200px;
 	height:auto;
-	border-radius:10px;
+}
+#deskripsi-blogger,
+#deskripsi-programmer,
+#deskripsi-webmaster{
+	display:inline-block;
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	text-transform:uppercase;
+	line-height:150px;
+	color:white;
+	font-family:'aclonica';
+	border:6px solid #bdc3c7;
+}
+#deskripsi-blogger{
+	background:#9b59b6;
+}
+#deskripsi-programmer{
+	background:#2ecc71;
+}
+#deskripsi-webmaster{
+	background:#e67e22;
+}
+#deskripsi-blogger:hover{
+	background:#8e44ad;
+	cursor:pointer;
+}
+#deskripsi-programmer:hover{
+	background:#27ae60;
+	cursor:pointer;
+}
+#deskripsi-webmaster:hover{
+	background:#d35400;
+	cursor:pointer;
 }
 .footer-wrapper{
 	display:block;
