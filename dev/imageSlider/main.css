@@ -1,0 +1,103 @@
+#outer{
+	display:inline-block;
+	width: auto;
+	height: auto;
+	border: 2px solid black;
+	position: relative;
+	text-align: center;
+}
+#judul{
+	text-align: center;
+}
+#gambar{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #55585F;
+}
+#gambar,
+#gambar div,
+#gambar table{
+	height: 300px;
+}
+#gambar div table{
+	margin: 0 auto;
+}
+#gambar div{
+	display: inline-block;
+	margin: 0;
+	padding:0;
+	float:left;
+}
+#gambar img{
+	margin: 0;
+	padding:0;
+}
+#preview1 img,
+#preview2 img{
+	width: auto;
+	height: auto;
+	max-width: 90px;
+	max-height: 100px;
+}
+#preview1{
+	width: 100px;
+	float: left;
+}
+#preview2{
+	width: 100px;
+	float: right;
+}
+#tampil{
+	width: 380px;
+	height: auto;
+	background: black;
+}
+#tampil img{
+	height: auto;
+	width: auto;
+	max-width: 370px;
+	max-height: 300px;
+}
+#semuagambar{
+	display: block;
+	height: 50px;
+	background: green;
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+	clear: both;
+}
+#semuagambar img{
+	height: 40px;
+	opacity: 0.5;
+	margin: 5px;
+	width: auto;
+}
+#pengaturan{
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	outline: 2px solid;
+	float: right;
+}
+#pengaturan h2{
+	margin: 0;
+	display: block;
+	text-align: center;
+	background: #3E5FCE;
+}
+#aturgambar td{
+	display: block;
+	width:100%;
+}
+.taruhgambar{
+	width: 310px;
+}
+#mainkan{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+}
