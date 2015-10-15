@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css"></link>
+	<script type="text/javascript" src="main.js"></script>
+	<title>Generate Layout</title>
+</head>
+<body>
+	<div id="alat">
+		<ul id="nav-alat">
+			<li>body
+				<ul>
+					<table>
+						<tr>
+							<td>background</td>
+							<td><input id="b-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="b-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="b-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="b-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="b-more" type="text" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>outer
+				<ul>
+					<table>
+						<tr>
+							<td>background</td>
+							<td><input id="o-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>width</td>
+							<td><input id="o-w" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><input id="o-h" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="o-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="o-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="o-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="o-more" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>header
+				<ul>
+					<table>
+						<tr>
+							<td>display</td>
+							<td><input id="h-d" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>background</td>
+							<td><input id="h-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><input id="h-h" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="h-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="h-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="h-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="h-more" type="text" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>nav
+				<ul>
+					<table>
+						<tr>
+							<td>background</td>
+							<td><input id="n-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><input id="n-h" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="n-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="n-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="n-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="n-more" type="text" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>content
+				<ul>
+					<table>
+						<tr>
+							<td>how many sidebar</td>
+							<td><input id="c-js" type="number" min="1" max="3" onchange="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td colspan="2"><table id="sidebarskrg"></table></td>
+						</tr>
+						<tr>
+							<td>background</td>
+							<td><input id="c-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><input id="c-h" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="c-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="c-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="c-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="c-more" type="text" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>footer
+				<ul>
+					<table>
+						<tr>
+							<td>background</td>
+							<td><input id="f-b" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><input id="f-h" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td><input id="f-c" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+							<td>margin</td>
+							<td><input id="f-m" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>padding</td>
+							<td><input id="f-p" type="text" onkeyup="updatenilai()"></input></td>
+						</tr>
+						</tr>
+							<td>more</td>
+							<td><textarea id="f-more" type="text" onkeyup="updatenilai()"></textarea></input></td>
+						</tr>
+					</table>
+				</ul>
+			</li>
+			<li>Help
+				<ul id="linkbantuan">
+					<li><a href="www.w3schools.com" target="_blank">W3Schools</a></li>
+					<li><a href="flatuicolors.com" target="_blank">FlatUiColors</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="outer">
+		<div id="header"></div>
+		<div id="nav"></div>
+		<div id="content">
+			<div id="sidebar1"></div>
+			<div id="sidebar2"></div>
+			<div id="sidebar3"></div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
