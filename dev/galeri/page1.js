@@ -1,4 +1,3 @@
-
 var jml = 0;
 var tambah = setInterval(tambahproses,80);
 
@@ -16,6 +15,7 @@ function tambahproses(){
 		document.querySelector('#no4 p').style.background = "black";
 		if (jml == 100) {
 			document.querySelector('.replay button').style.display = "inline-block";
+            clearInterval(tambah);
 		};
 	}
 

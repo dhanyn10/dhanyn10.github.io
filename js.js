@@ -1,3 +1,4 @@
+var persenhtml;
 window.onscroll = function(){
 	var s = document.body.scrollTop;
 	var t = document.body.offsetHeight;
@@ -25,5 +26,8 @@ window.onscroll = function(){
 		child[0].className = "";
 		child[1].className = "aktif";
 		child[2].className = "";
+	}
+	if(s >= 240){
+		document.querySelector('#skill input').value = 1;
 	}
 }

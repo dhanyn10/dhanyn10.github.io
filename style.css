@@ -115,14 +115,14 @@ body{
 #total div{
 	display: block;
 	background: black;
-	width: 100%;
+	width: 0;
 	height: 30px;
 }
 #total span{
 	position: absolute;
 	right: 20px;
 	top:10px;
-	color: white;
+	color: #3498db;
 }
 #skill img{
 	height: 200px;
