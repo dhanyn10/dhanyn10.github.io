@@ -1,5 +1,10 @@
+@font-face{
+    font-family:'ubuntu r';
+    src: url('font/Ubuntu-R.ttf') format('truetype');
+}
 body{
 	margin: 0;
+    font-family: ubuntu r;
 }
 #luar{
 	display: block;
@@ -58,7 +63,7 @@ body{
 	display: inline-block;
 	line-height: 70px;
 	padding: 0 10px;
-	float: right;
+    float: left;
 }
 #menu li:hover{
 	background: #95a5a6;
@@ -66,7 +71,8 @@ body{
 #profil{
 	width: 100%;
 	height: auto;
-	background: #1abc9c;
+	background: #1abc9c url('foto/link-k.jpg') no-repeat right;
+    background-size:contain;
 }
 #profil p{
 	display: inline-block;
@@ -83,7 +89,7 @@ body{
 	clear: both;
 	height: auto;
 	background: #3979C1;
-	padding: 10px;
+	padding: 100px 10px;
 	text-align: center;
 }
 #html,
@@ -94,8 +100,8 @@ body{
 #cpp,
 #java{
 	display: inline-block;
-	width: 250px;
-	height: 280px;
+	width: 200px;
+	height: 150px;
 	margin: 5px;
 	padding: 10px;
 	border:1px solid;
@@ -105,8 +111,8 @@ body{
 }
 #skill div #total{
 	display: inline-block;
-	width: 200px;
-	padding: 5px;
+	width: 150px;
+	padding: 1px;
 	margin: 10px 0;
 	height: auto;
 	background: white;
@@ -116,22 +122,25 @@ body{
 	display: block;
 	background: black;
 	width: 0;
-	height: 30px;
+	height: 20px;
 }
 #total span{
+    font: bold 14px Arial;
 	position: absolute;
 	right: 20px;
-	top:10px;
+	top:2px;
 	color: #3498db;
 }
 #skill img{
-	height: 200px;
+	height: 100px;
 	width: auto;
 }
 #portfolio{
 	display: block;
 	width: 100%;
-	background: #e67e22;
+	background: url('foto/work.jpg') no-repeat;
+    background-size: cover;
+    height: 300px;
 }
 #portfolio h2{
 	text-align: center;
@@ -146,4 +155,7 @@ body{
 	width: 200px;
 	height: 200px;
 	border:1px solid;
+}
+#portfolio ul{
+    list-style:square;
 }

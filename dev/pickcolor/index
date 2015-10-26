@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <title>Static Color Picker</title>
+    </head>
+    <body>
+        <div id="luar"></div>
+    </body>
+</html>
