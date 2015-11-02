@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            a{
+                color: #2980b9;
+            }
+            form{
+                padding: 20px 0;
+            }
+            #outer{
+                background: #121212;
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+                -webkit-border-radius: 0 0 5px 5px;
+                -moz-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;
+            }
+            table{
+                margin: 0 auto;
+            }
+            table tr{
+                line-height: 30px;
+            }
+            #i_u,
+            #i_p{
+                background: #343431;
+                border: 0;
+            }
+            #i_u:focus,
+            #i_p:focus{
+                background: #484846;
+            }
+            h2{
+                line-height: 50px;
+                text-align: center;
+                margin: 0;
+                background: #e67e22;
+            }
+            h2,
+            span{
+                color: white;
+            }
+            input[type="submit"]{
+                border: 0;
+                line-height: 30px;
+                width: 100%;
+                background: #1abc9c;
+            }
+            input[type="submit"]:hover{
+                background: #16a085;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+                <h2>LOGIN</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><span>USERNAME</span></td>
+                        <td><input id="i_u"/></td>
+                    </tr>
+                    <tr>
+                        <td><span>PASSWORD</span></td>
+                        <td><input id="i_p"/></td>
+                    </tr>
+                    <tr>
+                        <td><a>Lupa Password</a></td>
+                        <td><input type="submit" value="submit"></input></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
