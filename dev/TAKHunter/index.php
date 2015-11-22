@@ -4,24 +4,30 @@
     $info   = mysql_query("SELECT * FROM user where nim = '$nim'");
     $baris  = mysql_fetch_assoc($info);
     $akses  = $baris['akses'];
+    
+    
 ?>
 <html>
     <head>
+        <link href="css/navigasi.css" type="text/css" rel="stylesheet"/>
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
+        <title>TAK Hunter</title>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a>Beranda</a></li>
-                <li><div id="subs">Event</div>
-                    <ul>
-                        <li>Open Recruitment</li>
-                        <li>Education</li>
-                        <li>Inspiring Talkshow</li>
-                        <li>Concert</li>
-                    </ul>
-                </li>
-                <li><a>Profil</a></li>
+                <li class="aktif"><a>Beranda</a></li>
+                <li><a>Event</a></li>
+                <?php
+                $h_akses = "";
+                if($akses == "adm")
+                    $h_akses = "user/admin.php";
+                else if($akses == "pub")
+                    $h_akses = "user/publiser.php";
+                else if($akses == "mhs")
+                    $h_akses = "user/mhs.php";
+                ?>
+                <li><a href="<?php echo $h_akses?>">Profil</a></li>
             </ul>
             <a id="keluar" href="keluar.php">Keluar</a>
         </nav>
@@ -35,6 +41,14 @@
                     if($akses == "adm"){
                         //lalala
                     }else if($akses == "pub"){
+                ?>
+            <h2>Event Saat ini</h2>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+                <?php
                     }else if($akses == "mhs"){
                 ?>
             <ul>

@@ -1,0 +1,26 @@
+#sidebar_kiri{
+    display: block;
+    background: #0A5D15;
+    width: 300px;
+    height: 600px;
+    padding: 20px 5px 0 10px;
+}
+#sidebar_kiri ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px dashed white;
+}
+#sidebar_kiri li{
+    display: block;
+    padding: 0 10px;
+    line-height: 40px;
+}
+#sidebar_kiri li:hover{
+    background: #5DC66C;
+    cursor: pointer;
+}
+.active{
+    background: #5DC66C;
+    opacity: 0.7;
+}

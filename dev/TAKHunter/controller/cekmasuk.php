@@ -16,7 +16,7 @@
             $baris              = mysql_fetch_assoc($kueri);
             $atur_nim           = $baris['nim'];
             $atur_nama          = $baris['nama'];
-            $_SESSION['nim']     = $atur_nim;
+            $_SESSION['nim']    = $atur_nim;
             $_SESSION['nama']   = $atur_nama;
             header('location:../index.php');
         }

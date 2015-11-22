@@ -1,0 +1,28 @@
+#sidebar_kiri{
+    display: inline-block;
+    width: auto;
+    height: 500px;
+}
+#sidebar_kiri{
+    background: #5083B4;
+    float: left;
+    padding: 20px 5px 0 20px;
+}
+#sidebar_kiri ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px dashed white;
+    min-width: 200px;
+}
+#sidebar_kiri li{
+    line-height: 30px;
+    padding: 0 10px;
+}
+.aktif{
+    background: #6AA0D3;
+}
+#menu_utama{
+    display: inline-block;
+    height: 100px;
+}
