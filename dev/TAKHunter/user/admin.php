@@ -1,6 +1,6 @@
 <?php
     include('../controller/koneksi.php');
-    include('../controller/sesi.php');
+    include('sesi.php');
 ?>
 <html>
     <head>

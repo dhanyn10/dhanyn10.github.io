@@ -1,6 +1,6 @@
 <?php
     include('../controller/koneksi.php');
-    include('../controller/sesi.php');
+    include('sesi.php');
     $kueri = mysql_query("SELECT * FROM user");
     $baris = mysql_num_fields($kueri);
 ?>
@@ -17,27 +17,37 @@
             <ul>
                 <li><a href="../index.php">Beranda</a></li>
                 <li><a>Event</a></li>
-                <li><a href="">Profil</a></li>
+                <li class="aktif"><a href="">Profil</a></li>
             </ul>
             <a id="keluar" href="../keluar.php">Keluar</a>
         </nav>
         <aside id="sidebar_kiri">
             <ul>
-                <li id="umum" class="aktif">Umum</li>
+                <li id="umum" class="active">Umum</li>
                 <li id="konfigurasi">Konfigurasi</li>
             </ul>
         </aside>
         <div id="menu_utama">
-<!--
             <h2>Profil Kamu</h2>
             <table>
                 <?php
-                $sql = "SELECT `COLUMN_NAME` FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = \'db_tak_hunter\' AND `TABLE_NAME` = \'user\'";
-                $q = mysql_query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA COLUMNS WHERE TABLE_SCHEMA = db_tak_hunter AND TABLE_NAME = user');
-                echo $q;
+                $ambil_kolom = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
+                $ambil_kolom .=".COLUMNS WHERE TABLE_SCHEMA = 'db_tak_hunter'";
+                $ambil_kolom .=" AND TABLE_NAME = 'user'";
+            
+                $q = mysql_query($ambil_kolom);
+                while($baris = mysql_fetch_array($q)){
+                    $kolom = $baris['COLUMN_NAME'];
+                    echo "<tr>";
+                    echo "<td>".$kolom."</td>";
+                    $ambil_kolom = "SELECT ".$kolom." FROM user where nim = ".$nim;
+                    $kueri = mysql_query($ambil_kolom);
+                    $cetak = mysql_fetch_array($kueri);
+                    echo "<td>".$cetak[$kolom]."</td>";
+                    echo "</tr>";
+                }
                 ?>
             </table>
--->
         </div>
         <aside id="sidebar_kanan"></aside>
     </body>

@@ -1,6 +1,10 @@
 <?php
     include('controller/koneksi.php');
-    include('controller/sesi.php');
+    session_start();
+    $nim    = $_SESSION['nim'];
+    $nama   = $_SESSION['nama'];
+    if($nim == null)
+        header('location:masuk.php');
     $info   = mysql_query("SELECT * FROM user where nim = '$nim'");
     $baris  = mysql_fetch_assoc($info);
     $akses  = $baris['akses'];
