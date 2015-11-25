@@ -1,0 +1,15 @@
+table{
+    border-collapse: collapse;
+}
+table th{
+    background: black;
+    color: white;
+    line-height: 30px;
+}
+table td{
+    border: 1px solid;
+    padding: 0 10px;
+}
+.tbl_aktif{
+    background: green;
+}

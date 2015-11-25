@@ -51,3 +51,6 @@ nav li:hover,
     background: #444749;
     color: white;
 }
+#user-info{
+    border: 1px solid;
+}

@@ -1,5 +1,6 @@
 #sidebar_kiri{
-    display: block;
+    display: inline-block;
+    float: left;
     background: #0A5D15;
     width: 300px;
     height: 600px;
@@ -23,4 +24,11 @@
 .active{
     background: #5DC66C;
     opacity: 0.7;
+}
+#konten{
+    display: inline-block;
+    margin: 0 5px;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
 }

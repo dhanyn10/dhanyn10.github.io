@@ -4,12 +4,10 @@
     $nim    = $_SESSION['nim'];
     $nama   = $_SESSION['nama'];
     if($nim == null)
-        header('location:masuk.php');
+        header('location:halaman/masuk.php');
     $info   = mysql_query("SELECT * FROM user where nim = '$nim'");
     $baris  = mysql_fetch_assoc($info);
     $akses  = $baris['akses'];
-    
-    
 ?>
 <html>
     <head>
@@ -21,7 +19,7 @@
         <nav>
             <ul>
                 <li class="aktif"><a>Beranda</a></li>
-                <li><a>Event</a></li>
+                <li><a href="halaman/event.php">Event</a></li>
                 <?php
                 $h_akses = "";
                 if($akses == "adm")
@@ -33,7 +31,7 @@
                 ?>
                 <li><a href="<?php echo $h_akses?>">Profil</a></li>
             </ul>
-            <a id="keluar" href="keluar.php">Keluar</a>
+            <a id="keluar" href="./halaman/keluar.php">Keluar</a>
         </nav>
         <aside id="s_kiri">
         </aside>

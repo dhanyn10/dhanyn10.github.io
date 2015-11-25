@@ -19,8 +19,8 @@
         mysql_query($q);
         session_start();
         $_SESSION['nama'] = "$nama";
-        header('location:../masuk.php');
+        header('location:../halaman/masuk.php');
     }else{
-        header('location:../registrasi.php');
+        header('location:../halaman/registrasi.php');
     }
 ?>

@@ -21,8 +21,8 @@
             header('location:../index.php');
         }
         else
-            header('location:../masuk.php');
+            header('location:../halaman/masuk.php');
     }else{
-        header('location:../masuk.php');
+        header('location:../halaman/masuk.php');
     }
 ?>
