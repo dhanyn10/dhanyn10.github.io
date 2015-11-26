@@ -10,6 +10,13 @@ table td{
     border: 1px solid;
     padding: 0 10px;
 }
-.tbl_aktif{
+#tbl_aktif{
     background: green;
+}
+.tbl_status{
+    display: inline-block;
+    border: 1px solid;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
 }
