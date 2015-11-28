@@ -26,3 +26,6 @@
     display: inline-block;
     height: 100px;
 }
+table tr{
+    line-height: 25px;
+}

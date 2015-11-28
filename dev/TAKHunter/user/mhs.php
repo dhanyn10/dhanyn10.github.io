@@ -29,8 +29,10 @@
         </aside>
         <div id="konten">
             <h2>Profil Kamu</h2>
-            <table id="user-info"><?php include('user-info.php');?>
+            <button>Atur ulang profil</button>
+            <table id="user-info"><?php include('user-info.php');?>  
             </table>
+            <input id='perbarui'/>
         </div>
         <aside id="sidebar_kanan"></aside>
     </body>
