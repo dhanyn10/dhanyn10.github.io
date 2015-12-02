@@ -15,7 +15,7 @@
         $q = "INSERT INTO user ";
         $q .= "(nim, nama, fakultas, angkatan, kontak, email, kata_sandi, akses) ";
         $q .= "VALUES ";
-        $q .= "('$nim','$nama','$fakultas', '$angkatan', '$kontak','$email','$katasandi','mhs')";
+        $q .= "('$nim','$nama','$fakultas', '$angkatan', '$kontak','$email','$katasandi','Mahasiswa')";
         mysql_query($q);
         session_start();
         $_SESSION['nama'] = "$nama";

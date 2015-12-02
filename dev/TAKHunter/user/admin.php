@@ -7,7 +7,7 @@
         <link href="../css/navigasi.css" type="text/css" rel="stylesheet"/>
         <link href="../css/admin.css" type="text/css" rel="stylesheet"/>
         <script src="../js/jquery.js" type="text/javascript"></script>
-        <script src="../js/admin.js" type="text/javascript"></script>
+        <script src="../js/general_user.js" type="text/javascript"></script>
         <title>Administrator : <?php echo $nama;?></title>
     </head>
     <body>
@@ -27,6 +27,7 @@
         </aside>
         <div id="konten">
             <h3>Profil</h3>
+            <button id="atur-ulang-profil" onclick="aturUlang()">Atur ulang profil</button>
             <table id="user-info"><?php include('user-info.php');?></table>
         </div>
         <aside id="sidebar_kanan"></aside>

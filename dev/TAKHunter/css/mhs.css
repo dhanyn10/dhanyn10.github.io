@@ -26,6 +26,9 @@
     display: inline-block;
     height: 100px;
 }
+table{
+    text-transform:capitalize;
+}
 table tr{
     line-height: 25px;
 }

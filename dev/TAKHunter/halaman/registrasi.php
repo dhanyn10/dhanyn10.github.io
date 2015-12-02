@@ -12,36 +12,36 @@
                 <table>
                     <tr>
                         <td><span>NIM</span></td>
-                        <td><input maxlength="10" type="text" name="nim" id="i_n"/></td>
+                        <td><input maxlength="10" type="text" name="nim" id="i_n" required/></td>
                         <td><span id="tersedia"></span></td>
                     </tr>
                     <tr>
                         <td><span>Nama Pengguna</span></td>
-                        <td><input maxlength="20" type="text" name="nama" id="i_n"/></td>
+                        <td><input maxlength="20" type="text" name="nama" id="i_n" required/></td>
                     </tr>
                     <tr>
                         <td><span>Fakultas</span></td>
-                        <td><select id="i_f" name="fakultas"></select></td>
+                        <td><select id="i_f" name="fakultas" required></select></td>
                     </tr>
                     <tr>
                         <td><span>Angkatan</span></td>
-                        <td><select id="i_a" name="angkatan"></select></td>
+                        <td><select id="i_a" name="angkatan" required></select></td>
                     </tr>
                     <tr>
                         <td><span>Kontak</span></td>
-                        <td><input maxlength="12" type="text" name="kontak" id="i_k"/></td>
+                        <td><input maxlength="12" type="text" name="kontak" id="i_k" required/></td>
                     </tr>
                     <tr>
                         <td><span>Email</span></td>
-                        <td><input maxlength="40" type="text" name="email" id="i_e"/></td>
+                        <td><input maxlength="40" type="text" name="email" id="i_e" required/></td>
                     </tr>
                     <tr>
                         <td><span>Kata Sandi</span></td>
-                        <td><input maxlength="12" type="password" name="ktsandi" id="i_p"/></td>
+                        <td><input maxlength="12" type="password" name="ktsandi" id="i_p" required/></td>
                     </tr>
                     <tr>
                         <td><span>Ulangi Sandi</span></td>
-                        <td><input maxlength="12" type="password" name="u_ktsandi" id="i_up"/></td>
+                        <td><input maxlength="12" type="password" name="u_ktsandi" id="i_up" required/></td>
                     </tr>
                     <tr>
                         <td><a>Lupa Password</a></td>

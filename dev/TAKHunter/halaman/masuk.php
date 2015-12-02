@@ -12,11 +12,11 @@
                 <table>
                     <tr>
                         <td><span>NIM</span></td>
-                        <td><input type="text" name="nim" id="i_n" maxlength="10"/></td>
+                        <td><input type="text" name="nim" id="i_n" maxlength="10" required/></td>
                     </tr>
                     <tr>
                         <td><span>KATA SANDI</span></td>
-                        <td><input type="password" name="ktsandi" id="i_p" maxlength="12"/></td>
+                        <td><input type="password" name="ktsandi" id="i_p" maxlength="12"required/></td>
                     </tr>
                     <tr>
                         <td><a>Lupa Password?</a></td>

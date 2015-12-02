@@ -10,13 +10,6 @@
     $akses  = $baris['akses'];
     if(isset($_GET['cancel']))
         echo "batal";
-
-    if($akses == 'adm')
-        $nama_akses = str_replace('adm','Admin',$akses);
-    if($akses == 'pub')
-        $nama_akses = str_replace('pub','Publisher',$akses);
-    if($akses == 'mhs')
-        $nama_akses = str_replace('mhs','Mahasiswa',$akses);
 ?>
 <html>
     <head>
@@ -24,7 +17,7 @@
         <link href="../css/event.css" type="text/css" rel="stylesheet"/>
         <script type="text/javascript" src="../js/jquery.js"></script>
         <script type="text/javascript" src="../js/event.js"></script>
-        <title><?php echo $nama_akses; ?> : Event</title>
+        <title><?php echo $akses; ?> : Event</title>
     </head>
     <body>
         <nav>
@@ -33,11 +26,11 @@
                 <li class="aktif"><a>Event</a></li>
                 <?php
                 $h_akses = "";
-                if($akses == "adm")
+                if($akses == "Administrator")
                     $h_akses = "../user/admin.php";
-                else if($akses == "pub")
+                else if($akses == "Publisher")
                     $h_akses = "../user/publiser.php";
-                else if($akses == "mhs")
+                else if($akses == "Mahasiswa")
                     $h_akses = "../user/mhs.php";
                 ?>
                 <li><a href="<?php echo $h_akses?>">Profil</a></li>
@@ -48,7 +41,7 @@
             <fieldset>
                 <legend>Event</legend>
                 <table>
-                    <button>Tambah Event Baru</button>
+                    <a href="?eventbaru=true">Tambah Event Baru</a>
 <?php
 //tayangkan judul tabel
     $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
@@ -76,7 +69,7 @@
            }if($kolom == 'confirm'){
                $kolom = '<input type="submit" value="pending"/>';
                $kolom .= '<input type="submit" id="tbl_aktif" value="konfirmasi"/>';
-               $kolom .= '<input type="submit" value="hapus"/>';
+               $kolom .= '<input type="button" class="hapusevent" value="hapus"/>';
            }
            echo "<td>$kolom</td>";
        }
@@ -84,6 +77,32 @@
    }
 ?>
                 </table>
+<?php
+    if(isset($_GET['eventbaru'])){
+        echo "
+        <div id='tambah-event'>
+            <form name='tambahEvent'>
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Lokasi</th>
+                        <th>Waktu</th>
+                        <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td><input type='text' name='namaEvent'/></td>
+                        <td><input type='text' name='lokasiEvent'/></td>
+                        <td><input type='text' name='waktuEvent'/></td>
+                        <td><textarea type='text' name='keteranganEvent'></textarea></td>
+                    </tr>
+                </table>
+            </form>
+            <button onclick='tambahevent()'>Tambah</button>
+            <a href='?' id='tbl-batal-event'>Batal</a>
+        </div>
+        ";
+    }
+?>
             </fieldset>
         </div>
     </body>

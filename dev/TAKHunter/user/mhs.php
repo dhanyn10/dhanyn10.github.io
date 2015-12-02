@@ -1,15 +1,13 @@
 <?php
     include('../controller/koneksi.php');
     include('sesi.php');
-    $kueri = mysql_query("SELECT * FROM user");
-    $baris = mysql_num_fields($kueri);
 ?>
 <html>
     <head>
         <link href="../css/navigasi.css" type="text/css" rel="stylesheet"/>
         <link href="../css/mhs.css" type="text/css" rel="stylesheet"/>
         <script src="../js/jquery.js" type="text/javascript"></script>
-        <script src="../js/mhs.js" type="text/javascript"></script>
+        <script src="../js/general_user.js" type="text/javascript"></script>
         <title>Mahasiswa : <?php echo $nama?></title>
     </head>
     <body>
@@ -29,10 +27,9 @@
         </aside>
         <div id="konten">
             <h2>Profil Kamu</h2>
-            <button>Atur ulang profil</button>
+            <button id="atur-ulang-profil" onclick="aturUlang()">Atur ulang profil</button>
             <table id="user-info"><?php include('user-info.php');?>  
             </table>
-            <input id='perbarui'/>
         </div>
         <aside id="sidebar_kanan"></aside>
     </body>
