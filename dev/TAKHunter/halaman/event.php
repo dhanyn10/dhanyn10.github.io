@@ -92,7 +92,7 @@
                     <tr>
                         <td><input type='text' name='namaEvent'/></td>
                         <td><input type='text' name='lokasiEvent'/></td>
-                        <td><input type='text' name='waktuEvent'/></td>
+                        <td><input type='date' name='waktuEvent'/></td>
                         <td><textarea type='text' name='keteranganEvent'></textarea></td>
                     </tr>
                 </table>
