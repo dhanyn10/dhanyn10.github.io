@@ -3,7 +3,16 @@ $('document').ready(function(){
         $('#tambah-event').remove();
     });
     $('.hapusevent').click(function(){
-        console.log("klik");
+        //mendapatkan nama event
+        var namaevent = this.parentNode.parentNode.childNodes[0].innerHTML;
+        jQuery.ajax({
+            url : "../controller/delete-event.php",
+            data : "namaEvent="+namaevent,
+            type : "POST",
+            success : function(hasil){
+                $('table')[0].innerHTML = hasil;
+            }
+        });
     });
 });
 function tambahevent(){

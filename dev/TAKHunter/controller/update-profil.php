@@ -4,7 +4,6 @@
     $nilai = $_POST['perintah'];
     $nilai = str_replace("_"," ",$nilai);
 
-
     //melihat type akses
     $akses = mysql_query("SELECT akses from user WHERE nim='$nim'");
     $akses = mysql_fetch_assoc($akses);
