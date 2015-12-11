@@ -15,8 +15,11 @@
     <head>
         <link href="../css/navigasi.css" type="text/css" rel='stylesheet'/>
         <link href="../css/event.css" type="text/css" rel="stylesheet"/>
+        <link href="../jquery-ui/jquery-ui.structure.min.css" type="text/css" rel="stylesheet"/>
+        <link href="../jquery-ui/jquery-ui.theme.min.css" type="text/css" rel="stylesheet"/>
         <script type="text/javascript" src="../js/jquery.js"></script>
         <script type="text/javascript" src="../js/event.js"></script>
+        <script type="text/javascript" src="../jquery-ui/jquery-ui.min.js"></script>
         <title><?php echo $akses; ?> : Event</title>
     </head>
     <body>
@@ -49,15 +52,13 @@
     $q1 .= " AND TABLE_NAME = 'event'";
    $kueri1 = mysql_query($q1);
    echo "<tr>";
-    $cs = 0;
    while($baris = mysql_fetch_assoc($kueri1)){
        echo "<th id=".$baris['COLUMN_NAME'].">".$baris['COLUMN_NAME']."</th>";
-       $cs++;
    }
    echo "</tr>";
 
    //tayangkan isi tabel
-    $q2 = "SELECT * FROM event";
+    $q2 = "SELECT nama, lokasi, status, DATE_FORMAT(waktu, '%d-%m-%Y'), keterangan FROM event";
     $kueri2 = mysql_query($q2);
    while($baris = mysql_fetch_row($kueri2)){
        echo "<tr>";
@@ -67,9 +68,9 @@
                $kolom .= '<input type="submit" value="konfirmasi"/>';
                $kolom .= '<input type="submit" value="hapus"/>';
            }if($kolom == 'confirm'){
-               $kolom = '<input type="submit" value="pending"/>';
+               $kolom = '<span>Pending</span>';
                $kolom .= '<input type="submit" id="tbl_aktif" value="konfirmasi"/>';
-               $kolom .= '<input type="button" class="hapusevent" value="hapus"/>';
+               $kolom .= '<button onclick="hapusevent()" class="hapusevent" >Hapus</button>';
            }
            echo "<td>$kolom</td>";
        }
@@ -79,29 +80,39 @@
                 </table>
 <?php
     if(isset($_GET['eventbaru'])){
+    $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
+    $q1 .= " .COLUMNS WHERE TABLE_SCHEMA = 'db_tak_hunter'";
+    $q1 .= " AND TABLE_NAME = 'event'";
+    $kueri1 = mysql_query($q1);
+
         echo "
         <div id='tambah-event'>
-            <form name='tambahEvent'>
                 <table>
-                    <tr>
-                        <th>Nama</th>
-                        <th>Lokasi</th>
-                        <th>Waktu</th>
-                        <th>Keterangan</th>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='namaEvent'/></td>
-                        <td><input type='text' name='lokasiEvent'/></td>
-                        <td><input type='date' name='waktuEvent'/></td>
-                        <td><textarea type='text' name='keteranganEvent'></textarea></td>
-                    </tr>
+                ";
+           while($baris = mysql_fetch_assoc($kueri1)){
+               echo "<tr>";
+               if(preg_match("/lokasi/i",$baris['COLUMN_NAME']))
+                   echo "<td>".$baris['COLUMN_NAME']."</td><td><textarea class='tbh-val' required></textarea></td>";
+               else if(preg_match("/status/i",$baris['COLUMN_NAME']))
+                   echo "<td>".$baris['COLUMN_NAME']."</td><td><input type='text' class='tbh-val' value='confirm' required='true' readonly/></td>";
+               else if(preg_match("/waktu/i",$baris['COLUMN_NAME']))
+                   echo "<td>".$baris['COLUMN_NAME']."</td><td><input type='date' class='tbh-val' required='true'></td>";
+               else if(preg_match("/keterangan/i",$baris['COLUMN_NAME']))
+                   echo "<td>".$baris['COLUMN_NAME']."</td><td><textarea required='true' class='tbh-val'></textarea></td>";
+               else
+                   echo "<td>".$baris['COLUMN_NAME']."</td><td><input type='text' required='true' class='tbh-val'></td>";
+               echo "</tr>";
+           }
+
+        echo "
                 </table>
-            </form>
             <button onclick='tambahevent()'>Tambah</button>
-            <a href='?' id='tbl-batal-event'>Batal</a>
+            <a href='?' id='tbl-batal-event'>Selesai</a>
         </div>
         ";
     }
+        $jml_baris = mysql_query("SELECT * FROM event");
+        echo mysql_num_rows($jml_baris);
 ?>
             </fieldset>
         </div>

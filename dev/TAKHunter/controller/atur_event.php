@@ -7,9 +7,10 @@
     $akses = mysql_fetch_assoc($akses);
     $akses = $akses['akses'];
     if($akses == "Administrator"){
-        $nilai = $_POST['event_e'];
+        $kolom = $_POST['dEvent'];
+        $isikolom = $_POST['vEvent'];
         
-        $kueri = mysql_query("INSERT INTO event (nama, lokasi, status, waktu, keterangan) VALUES ($nilai)");
+        $kueri = mysql_query("INSERT INTO event ($kolom) VALUES ($isikolom)");
         if($kueri){
                     //tayangkan judul tabel
             $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
@@ -35,7 +36,7 @@
                        $kolom .= '<input type="submit" value="konfirmasi"/>';
                        $kolom .= '<input type="submit" value="hapus"/>';
                    }if($kolom == 'confirm'){
-                       $kolom = '<input type="submit" value="pending"/>';
+                       $kolom = '<span>Pending</span>';
                        $kolom .= '<input type="submit" id="tbl_aktif" value="konfirmasi"/>';
                        $kolom .= '<input type="submit" value="hapus"/>';
                    }

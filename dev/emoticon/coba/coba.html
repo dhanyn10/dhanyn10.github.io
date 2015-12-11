@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="../jquery.js" type="text/javascript"></script>
+        <script>
+                        /*
+            dibuat oleh : Dhany Nurdiansyah
+            */
+            $('document').ready(function(){
+                 ns = document.querySelectorAll('p').length;
+                 //looping document change
+                 for(a = 0; a < ns; a++){
+                    dok = document.querySelectorAll('p')[a].innerHTML;
+                   //important document change,       //dont edit this if you don't understand
+                   dok = dok.replace(/[(]/g,'_kukiri_');
+                   dok = dok.replace(/[)]/g,'_kukanan_');
+                   dok = dok.replace(/:D/g, "<img src='emoticon/haha.gif'/>");
+                   dok = dok.replace(/:'_kukiri_/g, "<img src='emoticon/nangis.gif'/>");
+                   document.querySelectorAll('p')[a].innerHTML = dok;
+                 } 
+               for(a = 0; a < ns; a++){
+                   dok = document.querySelectorAll('p')[a].innerHTML;
+                   dok = dok.replace(/_kukiri_/g, '(');
+                   dok = dok.replace(/_kukanan_/g, ')');
+               }
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            lalalala :D
+        </p>
+    </body>
+</html>

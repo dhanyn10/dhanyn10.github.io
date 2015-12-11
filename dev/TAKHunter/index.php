@@ -22,11 +22,11 @@
                 <li><a href="halaman/event.php">Event</a></li>
                 <?php
                 $h_akses = "";
-                if($akses == "adm")
+                if($akses == "Administrator")
                     $h_akses = "user/admin.php";
-                else if($akses == "pub")
+                else if($akses == "Publisher")
                     $h_akses = "user/publiser.php";
-                else if($akses == "mhs")
+                else if($akses == "Mahasiswa")
                     $h_akses = "user/mhs.php";
                 ?>
                 <li><a href="<?php echo $h_akses?>">Profil</a></li>

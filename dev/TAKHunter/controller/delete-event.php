@@ -11,19 +11,6 @@
         $namaevent = $_POST['namaEvent'];
         $kueri = mysql_query("DELETE FROM event WHERE nama='$namaevent'");
         if($kueri){
-                //tayangkan judul tabel
-                $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
-                $q1 .= " .COLUMNS WHERE TABLE_SCHEMA = 'db_tak_hunter'";
-                $q1 .= " AND TABLE_NAME = 'event'";
-                $kueri1 = mysql_query($q1);
-                echo "<tr>";
-                $cs = 0;
-                while($baris = mysql_fetch_assoc($kueri1)){
-                   echo "<th id=".$baris['COLUMN_NAME'].">".$baris['COLUMN_NAME']."</th>";
-                   $cs++;
-                }
-                echo "</tr>";
-
                //tayangkan isi tabel
                 $q2 = "SELECT * FROM event";
                 $kueri2 = mysql_query($q2);
