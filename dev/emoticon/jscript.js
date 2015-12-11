@@ -51,6 +51,10 @@ $('document').ready(function(){
             document.querySelectorAll(selektor)[a].innerHTML = dok;
         }
     });
+    $('.charEmot').keyup(function(){
+        this.value = this.value.replace(/\[/g, "");
+        this.value = this.value.replace(/\]/g, "");
+    });
 });
 function ubahtulisan(){
     $('#ubahtulisan').html("selesai");
@@ -103,17 +107,17 @@ function cetakKode(){
     cetak +=    "$('document').ready(function(){\n";
     cetak +=    "     ns = document.querySelectorAll('"+selektor+"').length;\n";
     cetak +=    "     //looping document change\n";
-    cetak +=    "     for(a = 0; a < ns; a++){\n";
-    cetak +=    "        dok = document.querySelectorAll('"+selektor+"')[a].innerHTML;\n";
-    cetak +=    "        //important document change,\n";
-    cetak +=    "        //dont edit this if you don't understand\n";
-    cetak +=    "        dok = dok.replace(/[(]/g,'_kukiri_');\n";
-    cetak +=    "        dok = dok.replace(/[)]/g,'_kukanan_');\n";
+    cetak +=    "  for(a = 0; a < ns; a++){\n";
+    cetak +=    "       dok = document.querySelectorAll('"+selektor+"')[a].innerHTML;\n";
+    cetak +=    "       //important document change,\n";
+    cetak +=    "       //dont edit this if you don't understand\n";
+    cetak +=    "       dok = dok.replace(/[(]/g,'_kukiri_');\n";
+    cetak +=    "       dok = dok.replace(/[)]/g,'_kukanan_');\n";
     for(a = 0; a < arrEmotikon.length; a+= 3){
-        cetak +=    "        dok = dok.replace(/"+arrEmotikon[a+1]+"/g, &quot;&lt;img src='"+arrEmotikon[a+2]+"'&#47;&gt;&quot;);\n";
+        cetak +=    "       dok = dok.replace(/"+arrEmotikon[a+1]+"/g, &quot;&lt;img src='"+arrEmotikon[a+2]+"'&#47;&gt;&quot;);\n";
     }
-    cetak +=    "        document.querySelectorAll('"+selektor+"')[a].innerHTML = dok;\n";
-    cetak +=    "     } \n";
+    cetak +=    "       document.querySelectorAll('"+selektor+"')[a].innerHTML = dok;\n";
+    cetak +=    "   } \n";
     cetak +=    "   for(a = 0; a < ns; a++){\n";
     cetak +=    "       dok = document.querySelectorAll('"+selektor+"')[a].innerHTML;\n";
     cetak +=    "       dok = dok.replace(/_kukiri_/g, '(');\n";

@@ -7,14 +7,16 @@
         <script type="text/javascript" src="highlight.pack.js"></script>
     </head>
     <body>
+        <nav>
+            <h2>Generator pengubah Emoticon</h2>
+        </nav>
         <div id="bagian-kiri">
-            <button id="ubahtulisan" onclick="ubahtulisan()">ubah tulisan</button>
-            <p id="komentar">Lorem ipsum dolor sit amet :D , consectetur adipiscing elit. Maecenas viverra odio
-                quis lacus rhoncus congue. Cras luctus hendrerit imperdiet. Maecenas eget augue
-                diam. Mauris vulputate pharetra molestie. :( Aenean fringilla sit amet felis
-                sollicitudin fringilla. Praesent convallis sapien eros, eget accumsan metus
-                viverra tortor. Pellentesque suscipit lacus sit amet aliquet iaculis.
-            </p>
+            <aside id="bag-tulisan">
+                <p id="komentar">Lorem ipsum dolor sit amet :D , consectetur adipiscing elit. Maecenas viverra odio quis lacus rhoncus congue. Cras luctus hendrerit imperdiet. Maecenas eget augu diam. Mauris vulputate pharetra molestie. :( Aenean fringilla sit amet felissollicitudin fringilla. Praesent convallis sapien eros, eget accumsan metus viverra tortor. Pellentesque suscipit lacus sit amet aliquet iaculis.</p>
+                <input type="text" value="Default Selector : #komentar" readonly/>
+                <button id="ubahtulisan" onclick="ubahtulisan()">ubah tulisan</button>
+            </aside>
+            <br/>
             <div id="mesin-emo">
                 <table id="tabel-emo">
                     <tr>
@@ -30,11 +32,13 @@
                         <td><img class="previewGambar"/></td>
                     </tr>
                 </table>
-                <input id="namaSelector" placeholder="nama selector"/>
-                <button id="tambah">Tambah</button>
-                <button onclick="cetakKode()">Cetak Kode</button>
+                <button id="tambah">Tambah</button><br/>
+                Nama Selector : <input id="namaSelector"/>
             </div>
-            <pre type="JS"><code></code></pre>
+            <div id="generasikan">
+                <button id="cetakkode" onclick="cetakKode()">Cetak Kode</button>
+                <pre type="JS"><code></code></pre>
+            </div>
         </div>
         <div id="bagian-kanan">
             <div id="emot-list">
