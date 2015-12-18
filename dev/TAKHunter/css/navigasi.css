@@ -5,9 +5,11 @@
 body{
     margin: 0;
     font-family: Ubuntu-R;
+    background: #292d2d;
 }
 nav{
     display: inline-block;
+    background: white;
     width: 100%;
     height: 70px;
     -webkit-box-shadow:0 1px 1px black;
@@ -53,4 +55,9 @@ nav li:hover,
 }
 #perbaharui{
     display: block;
+}
+.luar{
+    width: 90%;
+    margin: 0 auto;
+    background: white;
 }

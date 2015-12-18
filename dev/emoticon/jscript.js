@@ -2,12 +2,6 @@ $('document').ready(function(){
     //get number of selector
     ns = document.querySelectorAll('#komentar').length;
     
-    //looping document change
-    for(a = 0; a < ns; a++){
-        dok = document.querySelectorAll('#komentar')[a].innerHTML;
-        dok = dok.replace(/=D/g, "[this change]");
-        document.querySelectorAll('#komentar')[a].innerHTML = dok;
-    }
     $('#tambah').click(function(){
         r = $('#tabel-emo')[0].rows[1].innerHTML;
         $('#tabel-emo').append("<tr>"+r+"</tr>");
@@ -29,8 +23,15 @@ $('document').ready(function(){
         for(a = 0; a < ls; a++){
             //atur ulang dokumen
             dok = document.querySelectorAll(selektor)[a].innerHTML;
-            dok = dok.replace(/[(]/g,"_kukiri_");
-            dok = dok.replace(/[)]/g,"_kukanan_");
+            dok = dok.replace(/[(]/g, "_kuki_");
+            dok = dok.replace(/[)]/g, "_kuka_");
+            document.querySelectorAll(selektor)[a].innerHTML = dok;
+            arrChar = ["`","~","!","@","#","%","^","&"];
+            for(arC = 0; arC < arrChar.length; arC++){
+                g = "_" + arrChar[arC] + "_";
+                ganti = new RegExp(g,"g");
+                dok = dok.replace(ganti, "_"+arC+"_");
+            }
             document.querySelectorAll(selektor)[a].innerHTML = dok;
             for(b = 0; b < arrEmotikon.length; b += 3){
                 
@@ -42,18 +43,21 @@ $('document').ready(function(){
                 document.querySelectorAll(selektor)[a].innerHTML =
                     document.querySelectorAll(selektor)[a].innerHTML.replace(ganti, "<img src='"+arrEmotikon[b+2]+"'/>");
             }
-        }
-        
-        for(a = 0; a < ls; a++){
-            dok = document.querySelectorAll(selektor)[a].innerHTML;
-            dok = dok.replace(/_kukiri_/g,"(");
-            dok = dok.replace(/_kukanan_/g,")");
-            document.querySelectorAll(selektor)[a].innerHTML = dok;
+//            
+//            dok = document.querySelectorAll(selektor)[a].innerHTML;
+//            dok = dok.replace(/_kuki_/g, "(");
+//            dok = dok.replace(/_kuka_/g, ")");
+//            document.querySelectorAll(selektor)[a].innerHTML = dok;
         }
     });
     $('.charEmot').keyup(function(){
         this.value = this.value.replace(/\[/g, "");
         this.value = this.value.replace(/\]/g, "");
+        this.value = this.value.replace(/\$/g,"");
+    });
+    $('#tulisan').keydown(function(e){
+        k = e.keyCode? e.keyCode : e.charCode;
+        console.info(e);
     });
 });
 function ubahtulisan(){
@@ -85,9 +89,17 @@ function ambildata(){
         arrEmotikon[a] = $('#tabel-emo')[0].rows[r].cells[0].childNodes[0].value;
         //karakter emoticon
         b = $('#tabel-emo')[0].rows[r].cells[1].childNodes[0].value;
-        b = b.replace(/[(]/g, '_kukiri_');
-        b = b.replace(/[)]/g, '_kukanan_');
+        b = b.replace(/[(]/g,"_kuki_");
+        b = b.replace(/[)]/g,"_kuka_");
+        arrChar = ["`","~","!","@","#","%","^","&","*"];
+        console.info(arrChar.length);
+        for(arC = 0; arC < arrChar.length; arC++){
+            g = "_" + arrChar[arC] + "_";
+            ganti = new RegExp(g,"g");
+            b = b.replace(ganti, "_"+arC+"_");
+        }
         arrEmotikon[a+1] = b;
+        console.info("x"+arrEmotikon[a+1]);
         //url gambar
         arrEmotikon[a+2] = $('#tabel-emo')[0].rows[r].cells[2].childNodes[0].value;
         r++;

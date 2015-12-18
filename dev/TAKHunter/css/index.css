@@ -1,20 +1,27 @@
-body{
-    margin: 0;
-}
 #s_kiri{
     display: inline-block;
     float: left;
     background: #2c3e50;
-    width: 300px;
+    width: 25%;
     min-height: 600px;
+}
+#konten{
+    display: inline-block;
+    width: 48%;
+    height: 200px;
 }
 #s_kanan{
     display: inline-block;
     float: right;
-    width: 300px;
+    width: 25%;
     height: 400px;
     background: white;
     border: 1px dashed black;
+}
+footer{
+    display: block;
+    clear: both;
+    height: 100px;
 }
 #pengguna ul{
     margin: 0;

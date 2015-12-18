@@ -11,8 +11,14 @@
 ?>
 <html>
     <head>
+        <script src="js/datatables/jquery-1.11.1.min.js"></script>
         <link href="css/navigasi.css" type="text/css" rel="stylesheet"/>
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
+        <link href="css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/datatables/dataTables.bootstrap.js"></script>
+        <script src="js/datatables/jquery.dataTables.js"></script>
+        <script src="js/datatables/jquery.dataTables.min.js"></script>
         <title>TAK Hunter</title>
     </head>
     <body>
@@ -33,9 +39,21 @@
             </ul>
             <a id="keluar" href="./halaman/keluar.php">Keluar</a>
         </nav>
-        <aside id="s_kiri">
-        </aside>
-        <aside id="s_kanan">
+        <div class="luar">
+            <aside id="s_kiri"></aside>
+            <aside id="konten">
+    <?php
+    $q1 = mysql_query("SELECT nama, keterangan FROM event");
+    while($pos = mysql_fetch_assoc($q1)){
+        echo "<div class='post'>";
+        echo "<h2>".$pos['nama']."</h2>";
+        echo "<img src=''/>";
+        echo "<p>".$pos['keterangan']."</p>";
+        echo "</div>";
+    }
+    ?>
+            </aside>
+            <aside id="s_kanan">
             <div id="pengguna">
                 
             <span><?php echo $nama;?></span>
@@ -65,5 +83,7 @@
                 <?php }?>
             </div>
         </aside>
+            <footer></footer>
+        </div>
     </body>
 </html>

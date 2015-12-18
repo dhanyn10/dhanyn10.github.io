@@ -40,44 +40,9 @@
             </ul>
             <a id="keluar" href="keluar.php">Keluar</a>
         </nav>
-        <div>
+        <div class="luar">
             <fieldset>
                 <legend>Event</legend>
-                <table>
-                    <a href="?eventbaru=true">Tambah Event Baru</a>
-<?php
-//tayangkan judul tabel
-    $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
-    $q1 .= " .COLUMNS WHERE TABLE_SCHEMA = 'db_tak_hunter'";
-    $q1 .= " AND TABLE_NAME = 'event'";
-   $kueri1 = mysql_query($q1);
-   echo "<tr>";
-   while($baris = mysql_fetch_assoc($kueri1)){
-       echo "<th id=".$baris['COLUMN_NAME'].">".$baris['COLUMN_NAME']."</th>";
-   }
-   echo "</tr>";
-
-   //tayangkan isi tabel
-    $q2 = "SELECT nama, lokasi, status, DATE_FORMAT(waktu, '%d-%m-%Y'), keterangan FROM event";
-    $kueri2 = mysql_query($q2);
-   while($baris = mysql_fetch_row($kueri2)){
-       echo "<tr>";
-       foreach($baris as $kolom){
-           if($kolom == 'pending'){
-               $kolom = '<input type="submit" id="tbl_aktif" value="pending"/>';
-               $kolom .= '<input type="submit" value="konfirmasi"/>';
-               $kolom .= '<input type="submit" value="hapus"/>';
-           }if($kolom == 'confirm'){
-               $kolom = '<span>Pending</span>';
-               $kolom .= '<input type="submit" id="tbl_aktif" value="konfirmasi"/>';
-               $kolom .= '<button onclick="hapusevent()" class="hapusevent" >Hapus</button>';
-           }
-           echo "<td>$kolom</td>";
-       }
-       echo "</tr>";
-   }
-?>
-                </table>
 <?php
     if(isset($_GET['eventbaru'])){
     $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
@@ -114,6 +79,42 @@
         $jml_baris = mysql_query("SELECT * FROM event");
         echo mysql_num_rows($jml_baris);
 ?>
+
+                <table>
+                    <a href="?eventbaru=true">Tambah Event Baru</a>
+<?php
+//tayangkan judul tabel
+    $q1 = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA";
+    $q1 .= " .COLUMNS WHERE TABLE_SCHEMA = 'db_tak_hunter'";
+    $q1 .= " AND TABLE_NAME = 'event'";
+   $kueri1 = mysql_query($q1);
+   echo "<tr>";
+   while($baris = mysql_fetch_assoc($kueri1)){
+       echo "<th id=".$baris['COLUMN_NAME'].">".$baris['COLUMN_NAME']."</th>";
+   }
+   echo "</tr>";
+
+   //tayangkan isi tabel
+    $q2 = "SELECT nama, lokasi, status, DATE_FORMAT(waktu, '%d-%m-%Y'), keterangan FROM event";
+    $kueri2 = mysql_query($q2);
+   while($baris = mysql_fetch_row($kueri2)){
+       echo "<tr>";
+       foreach($baris as $kolom){
+           if($kolom == 'pending'){
+               $kolom = '<input type="submit" id="tbl_aktif" value="pending"/>';
+               $kolom .= '<input type="submit" value="konfirmasi"/>';
+               $kolom .= '<input type="submit" value="hapus"/>';
+           }if($kolom == 'confirm'){
+               $kolom = '<span>Pending</span>';
+               $kolom .= '<input type="submit" id="tbl_aktif" value="konfirmasi"/>';
+               $kolom .= '<button onclick="hapusevent()" class="hapusevent" >Hapus</button>';
+           }
+           echo "<td>$kolom</td>";
+       }
+       echo "</tr>";
+   }
+?>
+                </table>
             </fieldset>
         </div>
     </body>

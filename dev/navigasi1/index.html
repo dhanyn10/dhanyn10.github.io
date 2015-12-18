@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'/>
+        <style>
+            body{
+                margin: 0;
+            }
+            #navigasi{
+                background: #282828;
+                padding: 0 10px;
+                -webkit-box-shadow:0 1px 2px #383838;
+                -moz-box-shadow:0 1px 2px #383838;
+                box-shadow:0 1px 2px #383838;
+                height:40px;
+            }
+            #navigasi a{
+                text-decoration: none;
+            }
+            #navigasi ul{
+                margin: 0;
+                padding: 0;
+            }
+            #navigasi ul li{
+                display: inline-block;
+                float: left;
+            }
+            #navigasi ul li a,
+            #navigasi ul li span{
+                display: inline-block;
+                line-height: 40px;
+                padding: 0 8px;
+                color: white;
+                cursor: pointer;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            }
+            #navigasi ul li:hover,
+            #navigasi ul li a:hover{
+                background: #757575;
+            }
+            #navigasi ul ul{
+                display: none;
+                position: absolute;
+                background: #437373;
+                padding: 0 0 5px;
+                min-width: 180px;
+            }
+            #navigasi ul li:hover ul{
+                display: block;
+            }
+            #navigasi ul ul li{
+                display: block;
+                float: none;
+            }
+            #navigasi ul ul li a{
+                display: block;
+                font:normal 14px courier;
+                line-height: 30px;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+            #navigasi ul ul li:hover{
+                color: white;
+            }
+            #bukamenu{
+                display: none;
+                color: white;
+                font-size: 20px;
+                padding: 4px;
+                cursor: pointer;
+            }
+            #bukamenu i{
+                float: right;
+            }
+            @media(max-width:420px){
+                #bukamenu{display: block}
+                #navigasi{
+                    height: auto;
+                }
+                #navigasi ul{
+                    height: 40%;
+                    overflow: auto;
+                }
+                .tutupmenu{
+                    display: none;
+                }
+                .bukamenu{
+                    display: block;
+                }
+                #navigasi ul li,
+                #navigasi ul ul{
+                    position: static;
+                    display: block;
+                    padding: 0;
+                }
+                #navigasi ul li,
+                #navigasi ul li a,
+                #navigasi ul li span{
+                    line-height: 15px;
+                    font-size: 12px;
+                    position: static;
+                    display: block;
+                    float: none;
+                }
+            }
+        </style>
+    </head>
+    <script>
+        function bukamenu(){
+            document.querySelector('#navigasi ul').className = "bukamenu";
+            document.querySelector('#bukamenu').setAttribute('onclick',"tutupmenu()");
+        }
+        function tutupmenu(){
+            document.querySelector('#navigasi ul').className = "tutupmenu";
+            document.querySelector('#bukamenu').setAttribute('onclick',"bukamenu()");
+        }
+    </script>
+    <body>
+        <nav id="navigasi">
+            <span id="bukamenu" onclick="bukamenu()">Menu<i class="fa fa-bars"></i></span>
+            <ul class="tutupmenu">
+                <li><a expr:href='data:blog.homepageUrl'>Beranda</a></li>
+                <li><a href='http://dhanynurdiansyah.blogspot.com/p/tentang_25.html'>Tentang</a></li>
+                <li><a href='http://dhanynurdiansyah.blogspot.com/p/daftar-isi.html'>Daftar Isi</a></li>
+                <li><span>Info</span>
+                    <ul>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/informasi-situs.html'>Informasi Situs</a></li>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/kebijakan-privasi.html'>Kebijakan dan Privasi</a></li>
+                    </ul>
+                </li>
+                <li><span>alat</span>
+                    <ul>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/konversi-kode.html'>konversi Kode</a></li>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/color-picker_23.html'>Color Picker</a></li>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/speed-test.html'>Speed Test</a></li>
+                    </ul>
+                </li>
+                <li><span>Link</span>
+                    <ul>
+                        <li><a href='http://bis.telkomuniversity.ac.id' target='_blank'>Sistem Informasi</a></li>
+                        <li><a href='http://dhanynurdiansyah.blogspot.com/p/link-exchange.html' target='_blank'>Link Exchange</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

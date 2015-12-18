@@ -1,0 +1,37 @@
+<style>
+    #teksnya,
+    #isitulisan{
+        min-height: 150px;
+        padding: 5px;
+    }
+    #teksnya{
+        min-width: 90%;
+        border:2px dashed green;
+    }
+    #isitulisan{
+        min-width: 100%;
+    }
+</style>
+<script>
+function ubahtulisan(){
+  //mengambil isi dari id "teksnya"
+  dokumen = document.getElementById('teksnya').innerHTML;
+  //menampilkan kembali isi dari id "teksnya"
+  //didalam tag textarea
+   document.getElementById('teksnya').innerHTML = "<textarea id='isitulisan'>"+dokumen+"</textarea>";
+  document.getElementById('ubahtulisan').innerHTML = "Selesai";
+  document.getElementById('ubahtulisan').setAttribute('onclick',"selesaiubah()");
+}
+function selesaiubah(){
+  dokumen = document.getElementById('isitulisan').value;
+  document.getElementById('teksnya').innerHTML = dokumen;
+    document.getElementById('ubahtulisan').innerHTML = "Ubah Tulisan";
+document.getElementById('ubahtulisan').setAttribute('onclick',"ubahtulisan()");
+}
+</script>
+<p id="teksnya">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Suspendisse gravida, neque non tempus suscipit,
+    nisi felis fringilla metus, nec condimentum neque lorem sed magna.
+</p>
+<button id="ubahtulisan" onclick="ubahtulisan()">Ubah Tulisan</button>
