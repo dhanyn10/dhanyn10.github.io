@@ -1,6 +1,6 @@
 pre{
     display: block;
-    width: 500px;
+    width: 90%;
     height: auto;
     overflow: auto;
     -webkit-box-shadow:0 1px 1px #545454;
@@ -18,20 +18,31 @@ pre:before{
 pre[type="html"]{
     border-left: 4px solid #2e76d5;
 }
+pre[type="css"]{
+    border-left: 4px solid #24a741;
+}
+pre[type="javascript"]{
+    border-left: 4px solid #be3535;
+}
+pre[type="php"]{
+    border-left: 4px solid #595959;
+}
+
 pre[type="html"]:before{
     content: "html";
     background: #2e76d5;
-}
-pre[type="css"]{
-    border-left: 4px solid #24a741;
 }
 pre[type="css"]:before{
     content: "css";
     background: #24a741;
 }
+pre[type="javascript"]:before{
+    content: "javascript";
+    background: #be3535;
+}
 pre[type="php"]:before{
     content: "php";
-    background: #0dabc3;
+    background: #595959;
 }
 code{
     display: block;
