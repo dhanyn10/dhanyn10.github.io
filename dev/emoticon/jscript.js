@@ -26,19 +26,22 @@ $('document').ready(function(){
             dok = dok.replace(/[(]/g, "_kuki_");
             dok = dok.replace(/[)]/g, "_kuka_");
             document.querySelectorAll(selektor)[a].innerHTML = dok;
-            arrChar = ["`","~","!","@","#","%","^","&"];
+            arrChar = ["'","`","~","!","@","#","%","^","&"];
+            
             for(arC = 0; arC < arrChar.length; arC++){
                 g = "_" + arrChar[arC] + "_";
                 ganti = new RegExp(g,"g");
                 dok = dok.replace(ganti, "_"+arC+"_");
             }
             document.querySelectorAll(selektor)[a].innerHTML = dok;
+            
             for(b = 0; b < arrEmotikon.length; b += 3){
                 
                 //tampung karakter yang akan dicari
                 cari = arrEmotikon[b+1];
                 //tampung karakter pengganti
                 ganti = new RegExp(cari, "g");
+                console.info(ganti);
                 
                 document.querySelectorAll(selektor)[a].innerHTML =
                     document.querySelectorAll(selektor)[a].innerHTML.replace(ganti, "<img src='"+arrEmotikon[b+2]+"'/>");
@@ -53,7 +56,6 @@ $('document').ready(function(){
     $('.charEmot').keyup(function(){
         this.value = this.value.replace(/\[/g, "");
         this.value = this.value.replace(/\]/g, "");
-        this.value = this.value.replace(/\$/g,"");
     });
     $('#tulisan').keydown(function(e){
         k = e.keyCode? e.keyCode : e.charCode;
