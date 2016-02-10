@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+header{
+    background: #158338;
+    line-height:40px;
+    text-align: center;
+    padding: 0 10px;
+    color: white;
+}
+table{
+    outline: 1px solid #a8a8a8;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table th{
+    background: #0da978;
+}
+table th,
+table td{
+    border: 1px solid;
+    line-height: 30px;
+    padding: 0 6px;
+}
+table tr td:hover{
+    background: #dbdbdb;
+}
+#atur_tabel{
+    display: block;
+    width: 600px;
+    text-align: center;
+    margin: 5px auto;
+}
+#atur_tabel a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    line-height: 25px;
+    padding: 0 8px;
+    margin: 2px;
+    outline: 1px solid #999999;
+}
+#atur_tabel a:hover{
+    background: #55c86c;
+}
