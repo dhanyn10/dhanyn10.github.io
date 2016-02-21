@@ -45,6 +45,7 @@ function nilaiacak() {
 function gantiTeks() {
     asal    = document.getElementById('asaldokumen').value;
     pTeks   = document.getElementById('teksunik').value;
+    asal    = asal.replace(/[-]/g," ");
     split_asal  = asal.split(" ");
     split_p     = pTeks.split(" ");
     arr_p       = Array(split_p.length);
