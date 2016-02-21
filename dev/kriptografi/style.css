@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+h1{
+    display: block;
+}
+header{
+    display:block;
+    line-height:40px;
+    text-align:center;
+    background:black;
+    color: white;
+}
+section{
+    display: none;
+    float: left;
+    margin: 5px;
+    outline: 1px solid;
+    width: 400px;
+}
+.tampil{
+    display: inline-block;
+}
+section h2{
+    text-align:center;
+}
+section textarea,
+section button,
+section input,
+section table{
+    margin:0 auto;
+}
+section textarea,
+section button,
+section input,
+section table{
+    display:block;
+    width:90%;
+}
+section textarea{
+    min-height:200px;
+}
+section table{
+    border-collapse:collapse;
+}
+section table th,
+section table td{
+    border:1px solid;
+    line-height:25px;
+}
+#dekrip{
+    display: none;
+}
+nav{
+    background: #3498db;
+    color: black;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+nav li{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+nav ul ul{
+    display: none;
+}
+nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    background: #2c3e50;
+}
+nav li li{
+    display: block;
+    min-width: 170px;
+}
+nav ul ul li:hover{
+    color: white;
+}
+#jumlahacak{
+    text-align: right;
+}

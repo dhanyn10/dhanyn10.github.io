@@ -1,18 +1,52 @@
 <html>
     <head>
         <script src="jscript.js"></script>
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <textarea></textarea>
-        <button onclick="getKataUnik()">Go</button>
-        <input name="jmlKata"></input>
-        <textarea></textarea>
-        <input name="nilaiacak"></input>
-        <button onclick="nilaiacak()">ambil nilai acak</button>
-        <textarea name="hasilacak"></textarea>
-        <textarea name="asalTeks" placeholder="asalteks"></textarea>
-        <textarea name="pTeks" placeholder="pTeks"></textarea>
-        <button onclick="gantiTeks()">Ganti Teks</button>
-        <textarea name="hasilGanti"></textarea>
+	<header>Alat Kriptografi</header>
+    <nav>
+        <ul>
+            <li>Encript
+                <ul>
+                    <li id="unik" onclick="tampilkataunik()">Kata Unik</li>
+                    <li id="acak" onclick="tampilnilaiacak()">Nilai Acak</li>
+                    <li id="ganti" onclick="tampilgantiteks()">ganti Teks</li>
+                </ul>
+            </li>
+            <li>Decript</li>
+        </ul>
+    </nav>
+        <div id="enkrip">
+            <h1>Encript</h1>
+            <hr/>
+            <section id="kataunik">
+                <h2>Kata Unik</h2>
+                <textarea id="asalkataunik">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada erat velit, consectetur scelerisque ipsum lacinia eu. Integer nibh purus, venenatis sit amet est sit amet, commodo aliquam tortor. Curabitur eget ipsum convallis, ullamcorper lectus at, aliquet elit. Duis bibendum massa ac purus semper convallis. Aliquam ante dolor, varius ac facilisis in, finibus quis sapien. Sed mattis odio elementum felis tempus malesuada. Aliquam non venenatis diam. Vestibulum in sagittis tellus. Phasellus tempus at risus ut aliquam. Pellentesque enim dolor, dictum et velit in, rutrum dignissim nulla. Sed varius, justo a semper aliquam, risus enim vestibulum magna, eget ornare lacus sem a dui. Donec pretium sapien nunc, quis semper dui porttitor ac. Sed lorem ante, sollicitudin nec tempor quis, auctor eget lorem.
+                </textarea>
+                <button onclick="getKataUnik()">Go</button>
+                <input id="jmlKata"/>
+                <textarea id="hasilkataunik"></textarea>
+                <table id="tabelhasilkataunik"></table>
+            </section>
+            <section id="nilaiacak">
+                <h2>Nilai Acak</h2>
+                <input onkeyup="batasnilai()" id="jumlahacak"/>
+                <button onclick="nilaiacak()">ambil nilai acak</button>
+                <textarea id="hasilacak"></textarea>
+            </section>
+            <section id="gantiTeks">
+                <h2>Ganti Teks</h2>
+                <textarea id="asaldokumen" placeholder="asal teks"></textarea>
+                <textarea id="teksunik" placeholder="default pengganti"></textarea>
+                <button onclick="gantiTeks()">Ganti Teks</button>
+                <textarea id="hasilGanti"></textarea>
+            </section>
+        </div>
+        <div id="dekrip">
+        <h1>Decript</h1>
+        <hr/>
+        </div>
     </body>
 </html>
