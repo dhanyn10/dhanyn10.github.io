@@ -1,3 +1,19 @@
+function buka_enkrip(){
+    document.getElementById('enkrip').style.display = "block";
+    document.getElementById('dekrip').style.display = "none";
+    pjg = document.getElementById('enkrip').querySelectorAll('section').length;
+    for(a = 0; a < pjg; a++){
+        document.getElementById('enkrip').querySelectorAll('section')[a].className = "";
+    }
+}
+function buka_dekrip(){
+    document.getElementById('dekrip').style.display = "block";
+    document.getElementById('enkrip').style.display = "none";
+    pjg = document.getElementById('dekrip').querySelectorAll('section').length;
+    for(a = 0; a < pjg; a++){
+        document.getElementById('dekrip').querySelectorAll('section')[a].className = "";
+    }
+}
 function getKataUnik() {
     kal     = document.getElementById('asalkataunik').value;
     arrKal  = kal.split(/[ ,.]+/);
@@ -74,8 +90,43 @@ function tampilgantiteks(){
     delclass();
     document.getElementById('gantiTeks').className = "tampil";
 }
+function tampildekrip_kalimat(){
+    delclass();
+    document.getElementById('dekrip_kata').className = "tampil";
+}
+function tampildekrip_angka(){
+    delclass();
+    document.getElementById('dekrip_angka').className = "tampil";
+}
 function batasnilai(){
     nilai = document.getElementById('jumlahacak').value;
     if(nilai > 3000)
         document.getElementById('jumlahacak').value = "";
+}
+function dekrip_kata(){
+    dok_asal    = document.getElementById('dekrip_kata_asal').value;
+    dok_sumber  = document.getElementById('dekrip_kata_sumber').value;
+    split_asal      = dok_asal.split(/[ ,.]+/);
+    split_sumber    = dok_sumber.split(" ");
+    str = "";
+    for(i = 0; i < split_asal.length; i++){
+        for(j = 0; j < split_sumber.length; j++){
+            if(split_sumber[j] === split_asal[i]){
+                str += j + "-";
+            }
+        }
+    }
+    str = str.substring(0, str.length-1);
+    document.getElementById('dekrip_kata_hasil').value = str;
+}
+function dekrip_angka(){
+    dok_asal = document.getElementById('dekrip_angka_asal').value;
+    separator = ["-"," "];
+    splt_asal = dok_asal.split(new RegExp(separator.join('|'),"g"));
+    //mencari nilai terbesar;
+    terbesar = 0;
+    for(i = 0; i < split_asal.length; i++){
+        if(terbesar < split_asal[i])
+            terbesar = split_asal[i];
+    }
 }

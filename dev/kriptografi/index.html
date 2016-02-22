@@ -7,14 +7,19 @@
 	<header>Alat Kriptografi</header>
     <nav>
         <ul>
-            <li>Encript
+            <li><span onclick="buka_enkrip()">Encript</span>
                 <ul>
                     <li id="unik" onclick="tampilkataunik()">Kata Unik</li>
                     <li id="acak" onclick="tampilnilaiacak()">Nilai Acak</li>
                     <li id="ganti" onclick="tampilgantiteks()">ganti Teks</li>
                 </ul>
             </li>
-            <li>Decript</li>
+            <li><span onclick="buka_dekrip()">Decript</span>
+                <ul>
+                    <li onclick="tampildekrip_kalimat()">Dekrip kata</li>
+                    <li onclick="tampildekrip_angka()">Dekrip Angka</li>
+                </ul>
+            </li>
         </ul>
     </nav>
         <div id="enkrip">
@@ -22,31 +27,79 @@
             <hr/>
             <section id="kataunik">
                 <h2>Kata Unik</h2>
-                <textarea id="asalkataunik">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada erat velit, consectetur scelerisque ipsum lacinia eu. Integer nibh purus, venenatis sit amet est sit amet, commodo aliquam tortor. Curabitur eget ipsum convallis, ullamcorper lectus at, aliquet elit. Duis bibendum massa ac purus semper convallis. Aliquam ante dolor, varius ac facilisis in, finibus quis sapien. Sed mattis odio elementum felis tempus malesuada. Aliquam non venenatis diam. Vestibulum in sagittis tellus. Phasellus tempus at risus ut aliquam. Pellentesque enim dolor, dictum et velit in, rutrum dignissim nulla. Sed varius, justo a semper aliquam, risus enim vestibulum magna, eget ornare lacus sem a dui. Donec pretium sapien nunc, quis semper dui porttitor ac. Sed lorem ante, sollicitudin nec tempor quis, auctor eget lorem.
-                </textarea>
-                <button onclick="getKataUnik()">Go</button>
-                <input id="jmlKata"/>
-                <textarea id="hasilkataunik"></textarea>
-                <table id="tabelhasilkataunik"></table>
+                <div class="item">
+                    <textarea id="asalkataunik">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada erat velit, consectetur scelerisque ipsum lacinia eu. Integer nibh purus, venenatis sit amet est sit amet, commodo aliquam tortor. Curabitur eget ipsum convallis, ullamcorper lectus at, aliquet elit. Duis bibendum massa ac purus semper convallis. Aliquam ante dolor, varius ac facilisis in, finibus quis sapien. Sed mattis odio elementum felis tempus malesuada. Aliquam non venenatis diam. Vestibulum in sagittis tellus. Phasellus tempus at risus ut aliquam. Pellentesque enim dolor, dictum et velit in, rutrum dignissim nulla. Sed varius, justo a semper aliquam, risus enim vestibulum magna, eget ornare lacus sem a dui. Donec pretium sapien nunc, quis semper dui porttitor ac. Sed lorem ante, sollicitudin nec tempor quis, auctor eget lorem.</textarea>
+                </div>
+                <div class="item">
+                    <button onclick="getKataUnik()">Go</button>
+                </div>
+                <div class="item">
+                    <input id="jmlKata" disabled/>
+                    <textarea id="hasilkataunik"></textarea>
+                </div>
+                <div class="item">
+                    <table id="tabelhasilkataunik"></table>
+                </div>
             </section>
             <section id="nilaiacak">
                 <h2>Nilai Acak</h2>
-                <input onkeyup="batasnilai()" id="jumlahacak"/>
-                <button onclick="nilaiacak()">ambil nilai acak</button>
-                <textarea id="hasilacak"></textarea>
+                <div class="item">
+                    <input onkeyup="batasnilai()" id="jumlahacak"/>
+                    <button onclick="nilaiacak()">ambil nilai acak</button>
+                    <textarea id="hasilacak"></textarea>
+                </div>
             </section>
             <section id="gantiTeks">
                 <h2>Ganti Teks</h2>
-                <textarea id="asaldokumen" placeholder="asal teks"></textarea>
-                <textarea id="teksunik" placeholder="default pengganti"></textarea>
-                <button onclick="gantiTeks()">Ganti Teks</button>
-                <textarea id="hasilGanti"></textarea>
+                <div class="item">
+                    <textarea id="asaldokumen" placeholder="asal teks"></textarea>
+                </div>
+                <div class="item">
+                    <textarea id="teksunik" placeholder="default pengganti"></textarea>
+                </div>
+                <div class="item">
+                    <button onclick="gantiTeks()">Ganti Teks</button>
+                </div>
+                <div class="item">
+                    <textarea id="hasilGanti"></textarea>
+                </div>    
             </section>
+            <section id=""></section>
         </div>
         <div id="dekrip">
         <h1>Decript</h1>
         <hr/>
+        <section id="dekrip_kata">
+            <h2>Dekrip Kata</h2>
+            <div class="item">
+                <textarea id="dekrip_kata_asal" placeholder="asal teks"></textarea>
+            </div>
+            <div class="item">
+                <textarea id="dekrip_kata_sumber" placeholder="teks asli">Lorem ipsum dolor sit amet consectetur adipiscing elit Cras malesuada erat velit scelerisque lacinia eu Integer nibh purus venenatis est commodo aliquam tortor Curabitur eget convallis ullamcorper lectus aliquet Duis bibendum massa semper Aliquam ante varius facilisis finibus quis sapien Sed mattis odio elementum felis tempus non diam Vestibulum sagittis tellus Phasellus risus ut Pellentesque enim dictum rutrum dignissim nulla justo vestibulum magna ornare lacus dui Donec pretium nunc porttitor lorem sollicitudin tempor auctor</textarea>
+            </div>
+            <div class="item">
+                <button onclick="dekrip_kata()">dekrip teks</button>
+            </div>
+            <div class="item">
+                <textarea id="dekrip_kata_hasil"></textarea>
+            </div>
+        </section>
+        <section id="dekrip_angka">
+            <h2>Dekrip Angka</h2>
+            <div class="item">
+                <textarea id="dekrip_angka_asal" placeholder="asal teks"></textarea>
+            </div>
+            <div class="item">
+                <textarea id="dekrip_angka_sumber" placeholder="teks asli"></textarea>
+            </div>
+            <div class="item">
+                <button onclick="dekrip_angka()">dekrip teks</button>
+            </div>
+            <div class="item">
+                <textarea id="dekrip_angka_hasil"></textarea>
+            </div>
+        </section>
         </div>
+        <footer>&copy; Dhany Nurdiansyah</footer>
     </body>
 </html>
