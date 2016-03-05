@@ -28,8 +28,11 @@ function info(){
 var loadpersen = false;
 
 window.onscroll = function(){
+    //tinggi sroll top
 	var s = document.body.scrollTop;
+    //tinggi elemen yang terlihat
 	var t = document.body.offsetHeight;
+    //tinggi elemen keseluruhan
 	var h = window.innerHeight
 			|| document.documentElement.clientHeight
 			|| document.body.clientHeight;
