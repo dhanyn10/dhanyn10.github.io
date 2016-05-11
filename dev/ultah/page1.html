@@ -1,0 +1,80 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="page1.css">
+	<script type="text/javascript" src="page1.js"></script>
+	<title>Galeri</title>
+</head>
+<body onload="mainkan()">
+	<div class="blokir">
+    <table>
+        <td><h3>Resolusi minimal untuk bisa mengakses tampilan ini<br/>yaitu 640px</h3>
+        </td>
+    </table>
+	</div>
+    <div class="replay">
+        <button onclick="mainkan()">Replay!</button>
+    </div>
+	<div class="outer">
+		<table id="konten">
+			<td>
+                <div class="galeri">
+                    <aside id="no1">
+                        <div id="gambar">
+                            <h1>H</h1>
+                        </div>
+                        <p>Selamat</p>
+                    </aside>
+                    <aside id="no2">
+                        <div id="gambar">
+                            <h1>B</h1>
+                        </div>
+                        <p>Ulang</p>
+                    </aside>
+                    <aside id="no3">
+                        <div id="gambar">
+                            <h1>D</h1>
+                        </div>
+                        <p>Tahun</p>
+                    </aside>
+                    <aside id="no4">
+                        <div id="gambar">
+                            <h1>20<sup>th</sup></h1>
+                        </div>
+                        <p>Lipsum</p>
+                    </aside>
+                </div>
+                <div class="proses">
+                    <aside id="proses"></aside>
+                    <p><strong id="detail"></strong></p>
+                </div>
+            </td>
+        </table>
+    </div>
+    <div class="tabel-pengaturan">
+        <table>
+            <tr>
+                <td rowspan="2">background</td><td><input type="text" placeholder="color"></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="latar"></td>
+            </tr>
+            <tr>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="H"></td>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="Selamat"></td>
+            </tr>
+            <tr>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="B"></td>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="Ulang"></td>
+            </tr>
+            <tr>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="D"></td>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="Tahun"></td>
+            </tr>
+            <tr>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="20"></td>
+                <td><input type="text" onkeyup="ganti()" name="ganti" placeholder="Lipsum"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@font-face{
+    font-family:oleo;
+    src: url('OleoScript-Regular.ttf');
+}
+.blokir{
+	display: none;
+	background: #e74c3c;
+}
+.outer{
+	width: 100%;
+	height: 100%;
+	background: #e67e22;
+}
+.galeri aside{
+	margin: 0 10px 50px;
+	display: inline-block;
+	border:1px solid white;
+	position: relative;
+	background: #3498db;
+}
+.galeri aside:after{
+	content: "";
+	position: absolute;
+	left: 30px;
+	border-width: 30px;
+	border-style: solid;;
+	border-color: #3498db transparent transparent;
+}
+.galeri aside h1{
+    margin: auto 0;
+    font-size: 50px;
+    font-family: oleo;
+}
+#konten{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+#gambar{
+	margin: 10px 10px 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	outline: 1px solid;
+}
+#gambar img{
+	width: 100px;
+	height: auto;
+}
+aside p{
+	background: white;
+	margin: 10px;
+	line-height: 40px;
+	color: white;
+}
+.proses{
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	background: white;
+	width: 550px;
+	height: 20px;
+}
+#proses{
+	display: block;
+	width: 0;
+	height: 100%;
+	background: #34495e;
+}
+.proses p{
+	display: block;
+	color: white;
+}
+.replay{
+	display: block;
+}
+.replay button{
+	position: absolute;
+	width: 100px;
+	line-height: 30px;
+	display: none;
+}
+.tabel-pengaturan td{
+    vertical-align: top;
+}
+@media(max-width: 639px){
+	.blokir{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.blokir table{
+		margin: 0 auto;
+		height: 100%;
+	}
+	.blokir table h3{
+		text-align: center;
+		color: white;
+		border:2px dashed white;
+		padding: 10px;
+	}
+	.outer{display: none}
+}
