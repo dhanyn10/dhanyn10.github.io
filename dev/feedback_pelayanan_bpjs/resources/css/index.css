@@ -4,24 +4,47 @@ input[type="radio"]{
 label, textarea{
     display: block;
 }
-label{
-    color: #777777;
-    line-height: 30px;
-    padding-left: 20px;
-    margin: 0;
-    border-top: 1px solid #E7E7E7;
-    width: 100%;
+#pilihanloket label{
+    font-size: 4em;
+    background: #ecf0f1;
+    color: #BDC3C7;
+    text-align: center;
+    line-height: 4em;
+}
+#pilihanloket input[type="radio"]:checked + label{
+    background: #27ae60;
+    color: white;
 }
 input[type="radio"]:checked + label{
-    background: #E7E7E7;
     outline: 1px dotted black;
+}
+#loket label{
+    font-size: 10em;
+    text-align: center;
+}
+#loket input{
+    width: 100%;
+}
+#loket .fa-smile-o{
+    color: #2980b9;
+}
+#loket .fa-frown-o{
+    color: #f39c12;
+}
+#loket input[id="puas"]:checked + label{
+    background: #2980b9;
+    color: white;
+}
+#loket input[id="tdkpuas"]:checked + label{
+    background: #f39c12;
+    color: white;
 }
 #loket,#tidakpuas{
     display: none;
 }
 .box{
     display: block;
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
 }
 .pilih{
@@ -42,10 +65,14 @@ input[type="radio"]:checked + label{
 #loket .btn-primary{
     display: none;
 }
-textarea{
+textarea[name="tp"]{
+    display: none;
     margin: 10px;
     width: 90%;
 }
 .tabel-feedback{
     display: none;
+}
+.alert{
+    margin-top: 10px;
 }

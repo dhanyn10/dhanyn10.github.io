@@ -3,15 +3,10 @@ include "koneksi.php";
 
 $typePengguna = $_POST["pengguna"];
 if($typePengguna == "user"){
-    $nama = $_POST["nama"];
-    if($nama != null){
-        $kueri = mysql_query("INSERT INTO bpjs_user (Nama, KataSandi,status) VALUES('$nama', '','$typePengguna')");
-        session_start();
-        $_SESSION["nama"] = $nama;
-        header("location:../index.php");
-    }else{
-        header("location:../masuk.php");
-    }
+    $kueri = mysql_query("INSERT INTO bpjs_user (Nama, KataSandi,status) VALUES('user', 'user','user')");
+    session_start();
+    $_SESSION["nama"] = "user";
+    header("location:/feedback_pelayanan_bpjs/index.php");
 }else if($typePengguna == "admin"){
     $nama = $_POST["nama"];
     $sandi = $_POST["sandi"];
@@ -20,11 +15,11 @@ if($typePengguna == "user"){
     if($cek["KataSandi"] == $sandi){
         session_start();
         $_SESSION["nama"] = $nama;
-        header("location:../index.php");
+        header("location:/feedback_pelayanan_bpjs/index.php");
     }else{
-        header("location:../masuk.php");
+        header("location:/feedback_pelayanan_bpjs/masuk.php");
     }
 }else{
-    header("location:masuk.php");
+    header("location:/feedback_pelayanan_bpjs/masuk.php");
 }
 ?>

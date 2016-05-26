@@ -64,6 +64,13 @@ $(document).ready(function(){
             $("#tidakpuas").css("display","block");
         }
     });
+    $("input[name='tp']").click(function(){
+        var n = $("input[name='tp']:checked").val();
+        if(n == "lain-lain")
+            $("textarea[name='tp']").css("display","block");
+        else
+            $("textarea[name='tp']").css("display","none");
+    });
     /*
     =======================================================
     | tombol "Pilih" ditampilkan
@@ -96,6 +103,13 @@ $(document).ready(function(){
     | kuisioner yaitu berupa nama Pengguna, nomor loket, dan
     | data kepuasannya
     */
+    var sukses =    '<div class="alert alert-success fade in">'+
+                        '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+
+                        '<strong>Sukses!</strong> data berhasil disimpan.'+
+                    '</div>',
+        gagal =     '<div class="alert alert-danger">'+
+                        ' <strong>Gagal!</strong>Terjadi kesalahan.'+
+                    '</div>';
     $("#selesai1").click(function(){
         var nama, pilihanloket, kepuasan;
         nama         = $("#nama").html();
@@ -107,10 +121,11 @@ $(document).ready(function(){
             type    :   "POST",
             success :
             function(info){
-                if(info == "sukses")
-                    $(".box").append("<span>Sukses</span>");
-                else if(info == "gagal")
-                    $(".box").append("<span>gagal</span>");
+                if(info == "sukses"){
+                    $(".box").append(sukses);
+                }else{
+                    $(".box").append(gagal);
+                }
             }
         });
     });
@@ -138,11 +153,11 @@ $(document).ready(function(){
             data    : {nama:nama, loket:pilihanloket, puas:kepuasan, alasan:alasan},
             type    : "post",
             success : function(info){
-                if(info == "sukses")
-                    $(".box").append("<span>Sukses</span>");
-                else if(info == "gagal")
-                    $(".box").append("<span>gagal</span>");
-                    
+                if(info == "sukses"){
+                    $(".box").append(sukses);
+                }else{
+                    $(".box").append(gagal);
+                }
             }
         });
     });

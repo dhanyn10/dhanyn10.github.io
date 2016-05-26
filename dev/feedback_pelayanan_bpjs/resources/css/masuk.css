@@ -102,3 +102,13 @@ a{
 .admin-form{
     display: none;
 }
+.btn-link{
+    cursor: pointer;
+}
+h4{
+    margin: 0;
+    background: #2980b9;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+}

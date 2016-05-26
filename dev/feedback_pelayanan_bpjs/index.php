@@ -16,6 +16,7 @@ if($status['status'] == "admin"){
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>BPJS : Masukan Pengguna</title>
 
@@ -24,6 +25,7 @@ if($status['status'] == "admin"){
         <link href="resources/css/index.css" rel="stylesheet">
         <link href="resources/fontawesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="resources/css/simple-sidebar.css" rel="stylesheet">
+        <link href="resources/css/public.css" rel="stylesheet"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -32,12 +34,15 @@ if($status['status'] == "admin"){
         <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Feedback BPJS Kesehatan</a>
+                    <span class="navbar-brand">
+                        <img alt="Brand" src="../feedback_pelayanan_bpjs/resources/gambar/logo-bpjs.png"/>
+                        Kuisioner BPJS Kesehatan
+                    </span>
                 </div>
-             <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="keluar.php"><span class="fa fa-sign-out"></span>Keluar</a></li>
                 </ul>
             </div>
@@ -79,7 +84,6 @@ if($status['status'] == "admin"){
                             </table>
                             <table class="table table-bordered tabel-feedback">
                                 <tr>
-                                    <th>Nama</th>
                                     <th>Loket</th>
                                     <th>Kepuasan</th>
                                     <th>Alasan</th>
@@ -99,17 +103,41 @@ if($status['status'] == "admin"){
         <div class="box">
             <div class="pilih" id="pilihanloket">
                 <p>Pilihan loket</p>
-                <input type="radio" name="pilihanloket" id="pl1" value="1" checked/><label for="pl1">1</label>
-                <input type="radio" name="pilihanloket" id="pl2" value="2"/><label for="pl2">2</label>
-                <input type="radio" name="pilihanloket" id="pl3" value="3"/><label for="pl3">3</label>
-                <input type="radio" name="pilihanloket" id="pl4" value="4"/><label for="pl4">4</label>
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="col-xs-6">
+                            <input type="radio" name="pilihanloket" id="pl1" value="1" checked/><label for="pl1">1</label>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="radio" name="pilihanloket" id="pl2" value="2"/><label for="pl2">2</label>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="col-xs-6">
+                            <input type="radio" name="pilihanloket" id="pl3" value="3"/><label for="pl3">3</label>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="radio" name="pilihanloket" id="pl4" value="4"/><label for="pl4">4</label>
+                        </div>
+                    </div>
+                </div>
                 <button class="btn btn-primary">Pilih</button>
                 <div style="clear:right"></div>
             </div>
-            <div class="pilih" id="loket">
-                <p>Kepuasan Anda pada loket : <span id="nomorloket"></span></p>
-                <input type="radio" name="puas" id="puas" value="puas" checked/><label for="puas">Puas</label>
-                <input type="radio" name="puas" id="tdkpuas" value="tidak puas"/><label for="tdkpuas">Tidak</label>
+            <div class="pilih block" id="loket">
+                <p>Kepuasan Anda pada loket <span id="nomorloket"></span></p>
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="col-xs-6">
+                                <input type="radio" name="puas" id="puas" value="puas" checked/>
+                                <label for="puas" class=" fa fa-smile-o" aria-hidden="true"></label>
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="radio" name="puas" id="tdkpuas" value="tidak puas"/>
+                                <label for="tdkpuas" class=" fa fa-frown-o" aria-hidden="true"></label>
+                            </div>
+                        </div>
+                    </div>
                 <button id="selesai1" class="btn btn-success">Selesai</button>
                 <button class="btn btn-primary">Pilih</button>
                 <div style="clear:right"></div>
