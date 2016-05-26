@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#tampiladmin").click(function(){
+        $(".admin-form").css("display","block");
+        $(".user-form").css("display","none");
+    });
+    $("#tampiluser").click(function(){
+        $(".admin-form").css("display","none");
+        $(".user-form").css("display","block");
+    });
+});
