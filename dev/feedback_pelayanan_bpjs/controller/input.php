@@ -7,9 +7,10 @@ if(isset($_POST['alasan']))
 else
     $alasan = null;
 
-    $kueri = mysql_query("INSERT INTO bpjs_feedback(loket, kepuasan, alasan) VALUES('$loket','$puas', '$alasan')");
-    if($kueri)
-        echo "sukses";
-    else
-        echo "gagal";
+$tanggal = date("Y-m-d");
+$kueri = mysql_query("INSERT INTO bpjs_feedback(loket, kepuasan, alasan, tanggal) VALUES('$loket','$puas', '$alasan','$tanggal')");
+if($kueri)
+    echo "sukses";
+else
+    echo "gagal";
 ?>

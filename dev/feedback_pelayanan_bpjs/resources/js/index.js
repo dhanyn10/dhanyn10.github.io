@@ -56,11 +56,13 @@ $(document).ready(function(){
     | mengakhiri pengisian kuisioner, sementara jika tidak
     | puas akan diberikan kuisioner tambahan yaitu
     | detail/alasan ketidakpuasannya
+    xxxxxxxxxxxxxxxxxxxxxxxxx
     */
     $("#loket button").click(function(){
         var kepuasan = $("input[name='puas']:checked").val();
         if(kepuasan == "tidak puas"){
-            $("#loket").css("display","none");
+            $("#loket button").eq(0).addClass("disabled").attr("disabled");
+            $("#loket button").eq(1).addClass("disabled").attr("disabled");
             $("#tidakpuas").css("display","block");
         }
     });
@@ -110,6 +112,10 @@ $(document).ready(function(){
         gagal =     '<div class="alert alert-danger">'+
                         ' <strong>Gagal!</strong>Terjadi kesalahan.'+
                     '</div>';
+    $("#loket button").eq(1).click(function(){
+        $("#loket button").remove();
+        $("#loket input[type='radio']").attr("disabled",true)
+    });
     $("#selesai1").click(function(){
         var nama, pilihanloket, kepuasan;
         nama         = $("#nama").html();
@@ -123,8 +129,15 @@ $(document).ready(function(){
             function(info){
                 if(info == "sukses"){
                     $(".box").append(sukses);
+                    $("#loket button").eq(0).addClass("disabled").attr("disabled",true);
+                    $("#loket button").eq(1).addClass("disabled").attr("disabled",true);
+                    setTimeout(function(){
+                        window.location.href = "masuk.php";
+                    },2000);
                 }else{
                     $(".box").append(gagal);
+                    $("#loket button").eq(0).addClass("disabled").attr("disabled",true);
+                    $("#loket button").eq(1).addClass("disabled").attr("disabled",true);
                 }
             }
         });
@@ -155,8 +168,13 @@ $(document).ready(function(){
             success : function(info){
                 if(info == "sukses"){
                     $(".box").append(sukses);
+                    $("#tidakpuas button").eq(0).addClass("disabled").attr("disabled","disabled");
+                    setTimeout(function(){
+                        window.location.href = "masuk.php";
+                    },2000);
                 }else{
                     $(".box").append(gagal);
+                    $("#tidakpuas button").eq(0).addClass("disabled").attr("disabled","disabled");
                 }
             }
         });

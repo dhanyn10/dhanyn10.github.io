@@ -13,25 +13,10 @@ if($status['status'] == "admin"){
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>BPJS : Masukan Pengguna</title>
-
-        <!-- Bootstrap -->
-        <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+        <?php include "template/head.php"?>
         <link href="resources/css/index.css" rel="stylesheet">
-        <link href="resources/fontawesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="resources/css/simple-sidebar.css" rel="stylesheet">
-        <link href="resources/css/public.css" rel="stylesheet"/>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <title>BPJS : Feedback pelayanan</title>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -84,6 +69,7 @@ if($status['status'] == "admin"){
                             </table>
                             <table class="table table-bordered tabel-feedback">
                                 <tr>
+                                    <th>Tanggal</th>
                                     <th>Loket</th>
                                     <th>Kepuasan</th>
                                     <th>Alasan</th>
@@ -100,9 +86,21 @@ if($status['status'] == "admin"){
         }
         else if($posisi == "user"){
         ?>
+        <style>
+body{
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+}
+        </style>
         <div class="box">
             <div class="pilih" id="pilihanloket">
-                <p>Pilihan loket</p>
+                <h3>Pilihan loket</h3>
                 <div class="container-fluid">
                     <div class="row-fluid">
                         <div class="col-xs-6">
@@ -121,25 +119,23 @@ if($status['status'] == "admin"){
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary">Pilih</button>
+                <button class="btn btn-primary btn-lg">Pilih</button>
                 <div style="clear:right"></div>
             </div>
             <div class="pilih block" id="loket">
-                <p>Kepuasan Anda pada loket <span id="nomorloket"></span></p>
-                    <div class="container-fluid">
-                        <div class="row-fluid">
-                            <div class="col-xs-6">
-                                <input type="radio" name="puas" id="puas" value="puas" checked/>
-                                <label for="puas" class=" fa fa-smile-o" aria-hidden="true"></label>
-                            </div>
-                            <div class="col-xs-6">
-                                <input type="radio" name="puas" id="tdkpuas" value="tidak puas"/>
-                                <label for="tdkpuas" class=" fa fa-frown-o" aria-hidden="true"></label>
-                            </div>
-                        </div>
+                <h3>Kepuasan Anda pada loket <span id="nomorloket"></span></h3>
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <input type="radio" name="puas" id="puas" value="puas" checked/>
+                        <label for="puas" class=" fa fa-smile-o" aria-hidden="true"></label>
                     </div>
-                <button id="selesai1" class="btn btn-success">Selesai</button>
-                <button class="btn btn-primary">Pilih</button>
+                    <div class="col-md-6">
+                        <input type="radio" name="puas" id="tdkpuas" value="tidak puas"/>
+                        <label for="tdkpuas" class=" fa fa-frown-o" aria-hidden="true"></label>
+                    </div>
+                </div>
+                <button id="selesai1" class="btn btn-success btn-lg">Selesai</button>
+                <button class="btn btn-primary btn-lg">Pilih</button>
                 <div style="clear:right"></div>
             </div>
             <div class="pilih" id="tidakpuas">
@@ -151,7 +147,7 @@ if($status['status'] == "admin"){
                     <textarea name="tp" placeholder="jelaskan alasan anda"></textarea>
                     <br/>
                 </label>
-                <button id="selesai2" class="btn btn-success">Selesai</button>
+                <button id="selesai2" class="btn btn-success btn-lg">Selesai</button>
                 <div style="clear:right"></div>
             </div>
         </div>
@@ -161,5 +157,6 @@ if($status['status'] == "admin"){
         <script src="resources/js/jquery.min.js"></script>
         <script src="resources/js/bootstrap.min.js"></script>
         <script src="resources/js/index.js"></script>
+        <script src="resources/js/index-top.js"></script>
     </body>
 </html>

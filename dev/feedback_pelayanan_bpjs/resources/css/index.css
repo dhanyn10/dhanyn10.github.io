@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'ubuntu-r';
+    src: url("../font/Ubuntu-R.ttf") format("truetype");
+    
+}
+body{
+    background: white;
+}
 input[type="radio"]{
     display: none;
 }
@@ -5,11 +13,11 @@ label, textarea{
     display: block;
 }
 #pilihanloket label{
-    font-size: 4em;
+    font-size: 3em;
     background: #ecf0f1;
     color: #BDC3C7;
     text-align: center;
-    line-height: 4em;
+    line-height: 3em;
 }
 #pilihanloket input[type="radio"]:checked + label{
     background: #27ae60;
@@ -19,8 +27,11 @@ input[type="radio"]:checked + label{
     outline: 1px dotted black;
 }
 #loket label{
-    font-size: 10em;
+    font-size: 6em;
     text-align: center;
+    line-height: 180px;
+    width: 100%;
+    background: #ecf0f1;
 }
 #loket input{
     width: 100%;
@@ -29,14 +40,14 @@ input[type="radio"]:checked + label{
     color: #2980b9;
 }
 #loket .fa-frown-o{
-    color: #f39c12;
+    color: #e74c3c;
 }
 #loket input[id="puas"]:checked + label{
     background: #2980b9;
     color: white;
 }
 #loket input[id="tdkpuas"]:checked + label{
-    background: #f39c12;
+    background: #e74c3c;
     color: white;
 }
 #loket,#tidakpuas{
@@ -46,21 +57,19 @@ input[type="radio"]:checked + label{
     display: block;
     width: 600px;
     margin: 0 auto;
+    height: auto;
 }
 .pilih{
-    border: 1px solid #E7E7E7;
     background: #F8F8F8;
-    padding: 5px;
     -webkit-box-shadow:0 1px 2px black;
     -moz-box-shadow:0 1px 2px black;
     box-shadow:0 1px 2px black;
 }
-.btn-primary,
-.btn-success{
+.pilih button{
     float: right;
 }
 .btn{
-    margin-top: 5px;
+    margin: 10px;
 }
 #loket .btn-primary{
     display: none;
