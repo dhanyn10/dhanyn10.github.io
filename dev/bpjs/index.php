@@ -70,7 +70,7 @@ include "controller/index-session.php";
                             <div class="pengaturan-halaman">
                                 <span>posisi halaman : <input class="posisihalaman" name="posisihalaman" type="text"/></span>
                                 <span>jumlah baris : <input class="jumlahbaris" name="jumlahbaris" type="text"/></span>
-                                <button class="kirim-pengaturan-halaman btn btn-default btn-sm">GO</button>
+                                <button class="kirim-pengaturan-halaman btn btn-primary btn-sm">GO</button>
                             </div>
                             <?php } ?>
                         </div>

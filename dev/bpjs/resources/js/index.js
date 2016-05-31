@@ -315,11 +315,13 @@ $(".TUganti").click(function(){
 */
 $(".kirim-pengaturan-halaman").click(function(){
     var posisihalaman   = $("input[name='posisihalaman']").val();
-    if(posisihalaman == null)
-        posisihalaman = 1;
+    if(posisihalaman.length < 1){
+        posisihalaman = "1";
+    }
     var jmlbaris        = $("input[name='jumlahbaris']").val();
-    if(jmlbaris == null)
-        jmlbaris = 1;
+    if(jmlbaris.length < 1){
+        jmlbaris = "1";
+    }
     window.location.href = "?page=" + posisihalaman + "&limit=" + jmlbaris;
 });
 

@@ -14,17 +14,10 @@ if(isset($_GET['page'])){
     $pagingpost = $_GET['page'];
     $pagingpost --;
     if($pagingpost >= $halaman)
-        $pagingpost = ($halaman-1);
+        $pagingpost = $halaman;
 }
 
-if(isset($_GET['limit'])){
-    $batasfeedback = $_GET['limit'];
-//    if($batasfeedback >= ())
-//        $batasfeedback = 100;
-}else
-    $batasfeedback = 8;
-
-$kueriTabelFeedback = mysql_query("SELECT * FROM bpjs_feedback LIMIT ".$pagingpost.", ".$batasfeedback);
+$kueriTabelFeedback = mysql_query("SELECT * FROM bpjs_feedback LIMIT ".$pagingpost * $pagingbts.", ".$pagingbts);
 $nomor = 1;
 $judul = "<tr>
             <th>Nomor</th>
@@ -38,7 +31,7 @@ $judul = "<tr>
 $isi = "";
 while($cetak = mysql_fetch_assoc($kueriTabelFeedback)){
     $isi  .= "<tr>".
-                "<td>".($pagingpost * $batasfeedback + $nomor)."</td>".
+                "<td>".($pagingpost * $pagingbts + $nomor)."</td>".
                 "<td>".$cetak["IDfeedback"]."</td>".
                 "<td class='tanggal'>".$cetak["tanggal"]."</td>".
                 "<td>".$cetak["loket"]."</td>".
