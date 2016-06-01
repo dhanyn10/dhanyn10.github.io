@@ -104,6 +104,10 @@ textarea[name="tp"]{
 .bootbox-body .table > tbody > tr > td{
     border: 0;
 }
+.tabel-feedback td{
+    max-width: 200px;
+    word-wrap: break-word;
+}
 .tabel-feedback .btn{
     margin: 0px;
 }

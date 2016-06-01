@@ -68,7 +68,7 @@ include "controller/index-session.php";
                             <div style="display:block;"></div>
                             <?php include "controller/pagination.php"?>
                             <div class="pengaturan-halaman">
-                                <span>posisi halaman : <input class="posisihalaman" name="posisihalaman" type="text"/></span>
+                                <span>posisi halaman : <input class="posisihalaman" name="posisihalaman" type="text" value=""/></span>
                                 <span>jumlah baris : <input class="jumlahbaris" name="jumlahbaris" type="text"/></span>
                                 <button class="kirim-pengaturan-halaman btn btn-primary btn-sm">GO</button>
                             </div>
@@ -126,9 +126,9 @@ include "controller/index-session.php";
                 </div>
                 <div class="row">
                     <input type="radio" name="tp" id="tp1" value="lama" checked/><label class="col-md-3" for="tp1"><i class="fa fa-check-square-o"></i> lama</label>
-                    <input type="radio" name="tp" id="tp2" value="tidak ramah"/><label class="col-md-3" for="tp2"><i class="fa fa-check-square-o"></i> Tidak ramah</label>
-                    <input type="radio" name="tp" id="tp3" value="tidak sesuai"/><label class="col-md-3" for="tp3"><i class="fa fa-check-square-o"></i> Tidak sesuai</label>
-                    <input type="radio" name="tp" id="tp4" value="lain-lain"/><label class="col-md-3" for="tp4"><i class="fa fa-check-square-o"></i> lain-lain</label>
+                    <input type="radio" name="tp" id="tp2" value="tidak ramah"/><label class="col-md-3" for="tp2"><i class="fa"></i> Tidak ramah</label>
+                    <input type="radio" name="tp" id="tp3" value="tidak sesuai"/><label class="col-md-3" for="tp3"><i class="fa"></i> Tidak sesuai</label>
+                    <input type="radio" name="tp" id="tp4" value="lain-lain"/><label class="col-md-3" for="tp4"><i class="fa"></i> lain-lain</label>
                 </div>
                 <textarea name="tp" placeholder="jelaskan alasan anda (maks 250karakter)"></textarea>
                 <button id="selesai2" class="btn btn-success btn-lg">Selesai</button>

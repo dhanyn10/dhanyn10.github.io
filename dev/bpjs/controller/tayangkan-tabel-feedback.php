@@ -17,6 +17,7 @@ while($br < $jmlbaris){
 
 if(isset($_GET['page'])){
     $pagingpost = $_GET['page'];
+    $_SESSION['bpjs-sj25-paging-location'] = $_GET['page'];
     $pagingpost --;
     if($pagingpost >= $halaman)
         $pagingpost = $halaman;

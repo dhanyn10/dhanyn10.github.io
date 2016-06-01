@@ -79,6 +79,19 @@ $("#loket #puas").click(function(){
     $("#loket .btn-primary").css("display","none");
     $("#loket .btn-success").css("display","inline-block");
 });
+
+/*
+========================================================
+| fontawesome check ketika berada di pilihan tidak puas
+========================================================
+| fontawesome fa-check akan muncul ketika user memilih
+| salah satu opsi tidak puas dari pilihan yang
+| disediakan
+*/
+$("#tidakpuas .row label").click(function(){
+    $("#tidakpuas .row i").removeClass("fa-check-square-o");
+    $(this).children().addClass("fa-check-square-o");
+});
 function formulirsukses(){
     bootbox.dialog({
         message: "Data berhasil disimpan",
