@@ -4,7 +4,14 @@ $halaman    = 0;
 $pagingpost = 1;
 $paging     = mysql_query("SELECT * FROM bpjs_feedback");
 $jmlbaris   = mysql_num_rows($paging);
-$pagingbts  = 10;
+
+$pagingbts  = 8;
+if(isset($_GET['limit'])){
+    $_SESSION['bpjs-sj25-paging-limit'] = $pagingbts = $_GET['limit'];
+}else if(isset($_SESSION['bpjs-sj25-paging-limit'])){
+    $pagingbts = $_SESSION['bpjs-sj25-paging-limit'];
+}
+
 $htmlPaging = "<ul class='pagination'>";
 $br         = 0;
 while($br < $jmlbaris){
@@ -38,36 +45,35 @@ jika n = 20
 print  nn, n+2, n-1, dan n
 */
 $HtmlPaging = "";
-$median = $halaman / 2;
 if($halaman >= 6){
     for($a = 1; $a <= $halaman; $a++){
-        if($a == $pagingpost && $a == 1 && $pagingpost <= $median)
+        if($a == $pagingpost && $a == 1)
             $HtmlPaging =   "<li class='active'><a href='?page=".$a."'>".$a."</a></li>
                             <li><a href='?page=".($a+1)."'>".($a+1)."</a></li>
                             <li><a href='?page=".($a+2)."'>".($a+2)."</a></li>
                             <li><a href='?page=".$halaman."'>&gt;</a></li>";
-        if($a == $pagingpost && $a == 2 && $pagingpost <= $median)
-            $HtmlPaging =   "<li><a href='?page=1'>&lt;</a></li>
+        if($a == $pagingpost && $a == 2)
+            $HtmlPaging =   "<li><a href='?page=1'>1</a></li>
                             <li class='active'><a href='?page=".($a)."'>".($a)."</a></li>
                             <li><a href='?page=".($a+1)."'>".($a+1)."</a></li>
                             <li><a href='?page=".$halaman."'>&gt;</a></li>";
-        if($a == $pagingpost && $a >= 3 && $pagingpost <= $median)
+        if($a == $pagingpost && $a >= 3)
             $HtmlPaging =   "<li><a href='?page=1'>&lt;</a></li>
                             <li><a href='?page=".($a-1)."'>".($a-1)."</a></li>
                             <li class='active'><a href='?page=".($a)."'>".($a)."</a></li>
                             <li><a href='?page=".($a+1)."'>".($a+1)."</a></li>
                             <li><a href='?page=".$halaman."'>&gt;</a></li>";
-        if($a == $pagingpost && $a + 2 == $halaman && $pagingpost > $median)
+        if($a == $pagingpost && $a + 2 == $halaman)
             $HtmlPaging =   "<li><a href='?page=1'>&lt;</a></li>
                             <li><a href='?page=".($a-1)."'>".($a-1)."</a></li>
                             <li class='active'><a href='?page=".($a)."'>".($a)."</a></li>
                             <li><a href='?page=".($a+1)."'>".($a+1)."</a></li>
                             <li><a href='?page=".$halaman."'>&gt;</a></li>";
-        if($a == $pagingpost && $a + 1 == $halaman && $pagingpost > $median)
+        if($a == $pagingpost && $a + 1 == $halaman)
             $HtmlPaging =   "<li><a href='?page=1'>&lt;</a></li>
                             <li><a href='?page=".($a-1)."'>".($a-1)."</a></li>
                             <li class='active'><a href='?page=".($a)."'>".($a)."</a></li>
-                            <li><a href='?page=".$halaman."'>&gt;</a></li>";
+                            <li><a href='?page=".$halaman."'>".$halaman."</a></li>";
         if($a == $pagingpost && $a == $halaman)
             $HtmlPaging =   "<li><a href='?page=1'>&lt;</a></li>
                             <li><a href='?page=".($a-2)."'>".($a-2)."</a></li>
