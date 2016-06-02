@@ -335,7 +335,7 @@ $(".kirim-pengaturan-halaman").click(function(){
     if(jmlbaris.length < 1){
         jmlbaris = "1";
     }
-    window.location.href = "?page=" + posisihalaman + "&limit=" + jmlbaris;
+    window.location.href = "?feedback&page=" + posisihalaman + "&limit=" + jmlbaris;
 });
 
 $(".posisihalaman").keypress(function(e){

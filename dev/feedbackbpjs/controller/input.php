@@ -9,7 +9,7 @@ else
 
 date_default_timezone_set("Asia/Jakarta");
 $tanggal    = date("Y-m-d");
-$id         = date("d.m.y.h.i.s");
+$id         = date("y.m.d.h.i.s");
 $kueri = mysql_query("INSERT INTO bpjs_feedback(IDfeedback, loket, kepuasan, alasan, tanggal) VALUES('$id','$loket','$puas', '$alasan','$tanggal')");
 if($kueri)
     echo "sukses";

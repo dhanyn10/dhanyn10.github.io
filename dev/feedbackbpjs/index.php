@@ -43,8 +43,11 @@ include "controller/index-session.php";
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="<?php if(!isset($_GET['user'])){ ?>menu-aktif<?php }?>">
-                        <a href="?"><i class="fa fa-file-text"></i> Feedback</a>
+                    <li class="<?php if(!isset($_GET['feedback']) && !isset($_GET['user'])){ ?>menu-aktif<?php }?>">
+                        <a href="?"><i class="fa fa-tachometer"></i> Dashboard</a>
+                    </li>
+                    <li class="<?php if(isset($_GET['feedback'])){ ?>menu-aktif<?php }?>">
+                        <a href="?feedback"><i class="fa fa-file-text"></i> Feedback</a>
                     </li>
                     <li class="<?php if(isset($_GET['user'])){ ?>menu-aktif<?php }?>">
                         <a href="?user"><i class="fa fa-user"></i> User</a>
@@ -58,21 +61,25 @@ include "controller/index-session.php";
                     <div class="row">
                         <div class="col-lg-12">
                             <?php if(isset($_GET['user'])){ ?>
-                            <table id="tabel-user" class="table table-bordered table-striped tabel-user">  
-                            <?php include "controller/tayangkan-tabel-user.php"?>
-                            </table>
-                            <?php }else{ ?>
-                            <table id="tabel-feedback" class="table table-bordered table-striped tabel-feedback">
-                                <?php include "controller/tayangkan-tabel-feedback.php"?>
-                            </table>
-                            <div style="display:block;"></div>
-                            <?php include "controller/pagination.php"?>
-                            <div class="pengaturan-halaman">
-                                <span>posisi halaman : <input class="posisihalaman" name="posisihalaman" type="text" value=""/></span>
-                                <span>jumlah baris : <input class="jumlahbaris" name="jumlahbaris" type="text"/></span>
-                                <button class="kirim-pengaturan-halaman btn btn-primary btn-sm">GO</button>
-                            </div>
-                            <?php } ?>
+                                <table id="tabel-user" class="table table-bordered table-striped tabel-user">  
+                                <?php include "controller/tayangkan-tabel-user.php"?>
+                                </table>
+                            <?php }else if(isset($_GET['feedback'])){ ?>
+                                <table id="tabel-feedback" class="table table-bordered table-striped tabel-feedback">
+                                    <?php include "controller/tayangkan-tabel-feedback.php"?>
+                                </table>
+                                <div style="display:block;"></div>
+                                <?php include "controller/pagination.php"?>
+                                <div class="pengaturan-halaman">
+                                    <span>posisi halaman : <input class="posisihalaman" name="posisihalaman" type="text" value=""/></span>
+                                    <span>jumlah baris : <input class="jumlahbaris" name="jumlahbaris" type="text"/></span>
+                                    <button class="kirim-pengaturan-halaman btn btn-primary btn-sm">GO</button>
+                                </div>
+                            <?php }else{
+                            include "template/chart-feedback.php";
+                            ?>
+                                <p>ini dashboard</p>
+                            <?php }?>
                         </div>
                     </div>
                 </div>
@@ -130,7 +137,7 @@ include "controller/index-session.php";
                     <input type="radio" name="tp" id="tp3" value="tidak sesuai"/><label class="col-md-3" for="tp3"><i class="fa"></i> Tidak sesuai</label>
                     <input type="radio" name="tp" id="tp4" value="lain-lain"/><label class="col-md-3" for="tp4"><i class="fa"></i> lain-lain</label>
                 </div>
-                <textarea name="tp" placeholder="jelaskan alasan anda (maks 250karakter)"></textarea>
+                <textarea name="tp" placeholder="jelaskan alasan Anda (maks 250karakter)"></textarea>
                 <button id="selesai2" class="btn btn-success btn-lg">Selesai</button>
                 <div style="clear:right"></div>
             </div>
@@ -139,6 +146,7 @@ include "controller/index-session.php";
         <script src="resources/js/jquery.min.js"></script>
         <script src="resources/js/bootstrap.min.js"></script>
         <script src="resources/js/bootbox.min.js"></script>
+        <script src="resources/js/canvasjs/canvasjs.min.js"></script>
         <script src="resources/js/index.js"></script>
         <script src="resources/js/index-top.js"></script>
     </body>
