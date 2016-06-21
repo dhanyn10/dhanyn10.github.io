@@ -1,3 +1,13 @@
+websocket = new WebSocket("ws://localhost:9000/ws-user.php");
+websocket.onmessage = function(e)
+{
+    data = JSON.parse(e.data);
+    type = data.type;
+    cond = data.cond;
+    if(cond == "sukses"){
+        location.reload();
+    }
+}
 /*
 =======================================================
 | tombol toggle menu

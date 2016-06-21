@@ -40,18 +40,10 @@ var id = [];
     });
 }
 //LOGIN SEBAGAI ADMINISTRATOR
-
-//event ketika admin menekan tombol enter keyboard
-//ketika pointer berada di input field nama atau sandi
-$(".admin-form input[name='nama'], .admin-form input[name='sandi']").keypress(function(k){
-    if(k.which == 13)
-        loginAdmin();
-});
-//event ketika admin menekan tombol "Masuk"
-$("#admin").click(function(){
+$(".admin-form").on("submit",function(){
     loginAdmin();
+    return false;
 });
-
 //popup pemberitahuan gagal masuk sebagai admin
 function gagalLogin(){
     bootbox.dialog({

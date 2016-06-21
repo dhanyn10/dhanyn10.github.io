@@ -65,7 +65,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                        <?php if(!isset($_GET['feedback']) && !isset($_GET['user'])){include "chart-feedback.php";}?>
+                        <?php if(!isset($_GET['feedback']) && !isset($_GET['user'])){?>
+                            <div id="chart-feedback-wrapper">
+                                <?php include "chart-feedback.php"?>
+                            </div>
+                            <?php } ?>
                         <?php if(isset($_GET['feedback'])){?>
                         <p id="jumlahloket">Jumlah loket 
                             <button id="kurang" class="btn btn-warning btn-sm"><i class="fa fa-minus"></i></button>

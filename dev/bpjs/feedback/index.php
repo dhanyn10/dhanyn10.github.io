@@ -53,7 +53,7 @@
                             <span class="admin btn-link">masuk sebagai admin</span>
                         </center>
                     </div>
-                    <div class="admin-form form">
+                    <form class="admin-form form" action="">
                         <input type="hidden" name="pengguna" value="admin"/>
                         <div class="form-group">
                             <div class="input-group">
@@ -67,11 +67,11 @@
                                 <input class="form-control" type="password" name="sandi" placeholder="password"/>
                             </div>
                         </div>
-                        <button class="btn btn-info btn-block" id='admin'>Masuk</button>
+                        <input type="submit" class="btn btn-info btn-block" id='admin' value="Masuk"/>
                         <center>
                             <span class="user btn-link">masuk sebagai user</span>
                         <center>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

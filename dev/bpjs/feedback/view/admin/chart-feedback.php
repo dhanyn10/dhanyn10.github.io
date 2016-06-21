@@ -4,10 +4,12 @@
 | mengambil data berdasarkan tanggal saat ini
 ======================================================
 */
+
 $tanggalSekarang = date("Y-m-d");
 
 $dataChart = mysql_query("SELECT * FROM bpjs_feedback WHERE tanggal='".$tanggalSekarang."'");
 $chartArray = array();
+
 while($FetchDataChart = mysql_fetch_assoc($dataChart)){
     $chartArray[] = array(
         "loket" => $FetchDataChart['loket'],
@@ -121,7 +123,7 @@ $warnaTdkPuas   = "#72899A";
     <?php }?>
 </div>
 <script>
-window.onload = function() {
+function chartFeedback() {
     
     //chart batang
     var barChartData = {
@@ -227,4 +229,7 @@ window.onload = function() {
     window.myDoughnut = new Chart(pie<?php echo $a?>, configPie<?php echo $a?>);
     <?php }?>
 };
+window.onload = function(){
+    chartFeedback();
+}
 </script>

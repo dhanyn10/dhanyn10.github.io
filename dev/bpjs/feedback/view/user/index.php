@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if(isset($_SESSION['bpjs_pengguna'])){
+        if(!($_SESSION['bpjs_pengguna'] === "user"))
+            header("location:../../index.php");
+    }else
+        header("location:../../index.php");
+?>
 <html>
     <head>
     <?php include "../../../controller/koneksi.php";?>

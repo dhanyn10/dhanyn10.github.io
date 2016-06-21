@@ -1,3 +1,4 @@
+websocket = new WebSocket("ws://localhost:9000/ws-user.php");
 var pilihanloket, kepuasan, alasan;
 $("#pilihan-loket button").click(function(){
     
@@ -16,7 +17,6 @@ $("#pilihan-loket button").click(function(){
     
 });
 $("#btn-kepuasan-loket").click(function(){
-    
     //mengambil value kepuasan loket pada input yang terpilih
     //dan menyimpan hasilnya kedalam variabel kepuasan
     kepuasan    = $("input[name='kepuasan']:checked").val();
@@ -25,6 +25,7 @@ $("#btn-kepuasan-loket").click(function(){
     var data    = [];
     data[0]     = pilihanloket;
     data[1]     = kepuasan;
+    
     if(kepuasan == "puas")
     {
         jQuery.ajax({
@@ -58,7 +59,6 @@ $("#btn-kepuasan-loket").click(function(){
         
     }
 });
-
 //user memilih alasan ketidakpuasannya terhadap pelayanan loket
 $("input[name='alasan-tidak-puas']").click(function(){
     
@@ -122,6 +122,8 @@ $("#btn-alasan-tidak-puas").click(function(){
 | kuisioner dan menekan tombol sekesai.
 */
 function formulirsukses(){
+    var data_ws = {update : "true"};
+    websocket.send(JSON.stringify(data_ws));
     bootbox.dialog({
         closeButton : false,
         message     : "Data berhasil disimpan. Terimakasih telah mengisi kuisioner",

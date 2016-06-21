@@ -1,4 +1,7 @@
 <?php
+$konek   = mysql_connect("localhost","root", "");
+$db      = mysql_select_db("db_bpjs_tulungagung",$konek);
+
 if(isset($_SESSION['BPJS_type_sort']) && isset($_SESSION['BPJS_sort_kolom'])){
     $sort_kolom = $_SESSION['BPJS_sort_kolom'];
     if($sort_kolom === "ID")
