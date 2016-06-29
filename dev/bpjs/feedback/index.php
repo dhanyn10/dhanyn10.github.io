@@ -27,16 +27,7 @@
                         Feedback BPJS Kesehatan
                     </span>
                     <ul class="nav navbar-nav">
-                        <li><a href="../index.php">home</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="../company-profile.php">company profile<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a>Visi & misi</a></li>
-                                <li><a>Sejarah</a></li>
-                                <li><a>Struktur Organisasi</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../dokumentasi-kegiatan.php">Kegiatan</a></li>
-                        <li><a href="../kontak-kami.php">kontak Kami</a></li>
+                        <li><a href="../index.php">Portal BPJS</a></li>
                         <li class="active"><a>kuisioner</a></li>
                     </ul>
                 </div>

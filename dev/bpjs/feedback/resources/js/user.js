@@ -1,5 +1,18 @@
 websocket = new WebSocket("ws://localhost:9000/ws-user.php");
-var pilihanloket, kepuasan, alasan;
+
+var
+    //inisiasi variabel untuk menampung value pilihan loket
+    //pilihan yang tersedia yaitu 1 hingga 6
+    //sesuai dengan value tabel jumlah loket yang disimpan
+    //di database bpjs
+    pilihanloket,
+    //inisiasi variabel untuk menampung value jenis kepuasan
+    //pilihan yang tersedia yaitu puas dan tidak puas
+    kepuasan,
+    //inisiasi variabel untuk menampung value alasan
+    //nilai ini akan diisi jika kepuasan pelanggan valuenya tidak puas
+    alasan;
+
 $("#pilihan-loket button").click(function(){
     
     //sembunyikan form dengan id "pilihan-loket"
@@ -23,7 +36,9 @@ $("#btn-kepuasan-loket").click(function(){
     
     //inisiasi array "data" untuk menampung data pilihan loket dan kepuasan
     var data    = [];
+    //inisiasi untuk variabel menampung pilihanloket
     data[0]     = pilihanloket;
+    //inisiasi untuk variabel menampung data kepuasan pengguna feedback
     data[1]     = kepuasan;
     
     if(kepuasan == "puas")
@@ -59,6 +74,7 @@ $("#btn-kepuasan-loket").click(function(){
         
     }
 });
+
 //user memilih alasan ketidakpuasannya terhadap pelayanan loket
 $("input[name='alasan-tidak-puas']").click(function(){
     
@@ -96,6 +112,9 @@ $("#btn-alasan-tidak-puas").click(function(){
     
     //inisiasi array untuk menampung input user
     var data    = [];
+    
+    //menyimpan nilai variabel kedalam indeks array
+    //sesuai dengan model valuenya
     data[0]     = pilihanloket;
     data[1]     = kepuasan;
     data[2]     = alasan;
@@ -105,8 +124,11 @@ $("#btn-alasan-tidak-puas").click(function(){
         data    : {Feedback : data},
         success : function(s){
             if(s == "berhasil"){
+                //menampilkan popup formulir sukses jika data berhasil dimasukkan
+                //dengan benar dan lengkap
                 formulirsukses();
             }else if(s == "alasan_kosong"){
+                //menampilkan popup formulir tidak lengkap
                 formulirtidaklengkap();
             }else
                 formulirgagal();

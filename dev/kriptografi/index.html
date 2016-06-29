@@ -1,46 +1,113 @@
 <html>
     <head>
-        <script src="jscript.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-	<header>Alat Kriptografi</header>
-    <nav>
-        <ul>
-            <li><span onclick="buka_enkrip()">Encript</span>
-                <ul>
-                    <li id="unik" onclick="tampilkataunik()">Kata Unik</li>
-                    <li id="acak" onclick="tampilnilaiacak()">Nilai Acak</li>
-                    <li id="ganti" onclick="tampilgantiteks()">ganti Teks</li>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-navbar1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Encrypt
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="unik"><a onclick="tampilkataunik()">Kata Unik</a></li>
+                            <li id="acak"><a onclick="tampilnilaiacak()">Nilai Acak</a></li>
+                            <li id="ganti"><a onclick="tampilgantiteks()">ganti Teks</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Decrypt 
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="tampildekrip_kalimat()">Dekrip kata</a></li>
+                            <li><a onclick="tampildekrip_angka()">Dekrip Angka</a></li>        
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li><span onclick="buka_dekrip()">Decript</span>
-                <ul>
-                    <li onclick="tampildekrip_kalimat()">Dekrip kata</li>
-                    <li onclick="tampildekrip_angka()">Dekrip Angka</li>
-                </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
+    <div class="col-md-12">
         <div id="enkrip">
-            <h1>Encript</h1>
+            <h1><center>Encript</center></h1>
             <hr/>
-            <section id="kataunik">
-                <h2>Kata Unik</h2>
-                <div class="item">
-                    <textarea id="asalkataunik">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada erat velit, consectetur scelerisque ipsum lacinia eu. Integer nibh purus, venenatis sit amet est sit amet, commodo aliquam tortor. Curabitur eget ipsum convallis, ullamcorper lectus at, aliquet elit. Duis bibendum massa ac purus semper convallis. Aliquam ante dolor, varius ac facilisis in, finibus quis sapien. Sed mattis odio elementum felis tempus malesuada. Aliquam non venenatis diam. Vestibulum in sagittis tellus. Phasellus tempus at risus ut aliquam. Pellentesque enim dolor, dictum et velit in, rutrum dignissim nulla. Sed varius, justo a semper aliquam, risus enim vestibulum magna, eget ornare lacus sem a dui. Donec pretium sapien nunc, quis semper dui porttitor ac. Sed lorem ante, sollicitudin nec tempor quis, auctor eget lorem.</textarea>
-                </div>
-                <div class="item">
-                    <button onclick="getKataUnik()">Go</button>
-                </div>
-                <div class="item">
-                    <input id="jmlKata" disabled/>
-                    <textarea id="hasilkataunik"></textarea>
-                </div>
-                <div class="item">
-                    <table id="tabelhasilkataunik"></table>
-                </div>
-            </section>
+            <div class="col-md-4">
+                <section id="kataunik">
+                    <div class="panel panel-kataunik panel-default">
+                        <div class="panel-heading">Kata Unik</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="asalkataunik">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada erat velit, consectetur scelerisque ipsum lacinia eu. Integer nibh purus, venenatis sit amet est sit amet, commodo aliquam tortor. Curabitur eget ipsum convallis, ullamcorper lectus at, aliquet elit. Duis bibendum massa ac purus semper convallis. Aliquam ante dolor, varius ac facilisis in, finibus quis sapien. Sed mattis odio elementum felis tempus malesuada. Aliquam non venenatis diam. Vestibulum in sagittis tellus. Phasellus tempus at risus ut aliquam. Pellentesque enim dolor, dictum et velit in, rutrum dignissim nulla. Sed varius, justo a semper aliquam, risus enim vestibulum magna, eget ornare lacus sem a dui. Donec pretium sapien nunc, quis semper dui porttitor ac. Sed lorem ante, sollicitudin nec tempor quis, auctor eget lorem.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-default btn-sm" onclick="getKataUnik()">Go</button>
+                        </div>
+                    </div>
+    <!--
+                        <input id="jmlKata" disabled/>
+                        <textarea id="hasilkataunik"></textarea>
+                    </div>
+                    <div class="item">
+                        <table id="tabelhasilkataunik"></table>
+                    </div>
+    -->
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section id="hasilkataunik">
+                    <div class="panel panel-hasil-kataunik panel-default">
+                        <div class="panel-heading">Hasil</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-6">Jumlah Kata Unik</label>
+                                        <div class="col-md-3">
+                                            <input type="text" id="jmlKata" class="form-control" disabled/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="text-kataunik" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section id="tabel-kataunik">
+                    <div class="panel panel-tabel-kataunik panel-default">
+                        <div class="panel-heading">Tabel Kata Unik</div>
+                        <div class="panel-body">
+                            <table class="table table-bordered" id="tabel-hasilkataunik">
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+<!--
             <section id="nilaiacak">
                 <h2>Nilai Acak</h2>
                 <div class="item">
@@ -49,6 +116,8 @@
                     <textarea id="hasilacak"></textarea>
                 </div>
             </section>
+-->
+<!--
             <section id="gantiTeks">
                 <h2>Ganti Teks</h2>
                 <div class="item">
@@ -64,8 +133,10 @@
                     <textarea id="hasilGanti"></textarea>
                 </div>    
             </section>
-            <section id=""></section>
+-->
+<!--            <section id=""></section>-->
         </div>
+<!--
         <div id="dekrip">
         <h1>Decript</h1>
         <hr/>
@@ -100,6 +171,12 @@
             </div>
         </section>
         </div>
+-->
+        </div>
+        <div style="clear:both;"></div>
         <footer>&copy; Dhany Nurdiansyah</footer>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jscript.js"></script>
     </body>
 </html>

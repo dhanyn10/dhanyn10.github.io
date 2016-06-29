@@ -27,23 +27,31 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bpjs-admin-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <span class="navbar-brand">
                         <img alt="Brand" src="../../../resources/public/gambar/logo-bpjs.png"/>
                         Feedback BPJS Kesehatan
                     </span>
                     <button class="btn btn-default navbar-btn" id="menu-toggle">Toggle Menu</button>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                            <span id="namaAdmin"><?php echo $_SESSION['bpjs_admin'];?></span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../controller/keluar.php"><span class="fa fa-sign-out"></span>Keluar</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="bpjs-admin-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                <span id="namaAdmin"><?php echo $_SESSION['bpjs_admin'];?></span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../controller/keluar.php"><span class="fa fa-sign-out"></span>Keluar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div id="wrapper">

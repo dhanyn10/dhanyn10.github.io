@@ -35,9 +35,9 @@ function getKataUnik() {
 		        + "<td>" + i + "</td><td>" + splitKal[i] + "</td>"
 		        + "</tr>";
     }
-    document.getElementById('jmlKata').value                =  jmlkata;
-    document.getElementById('hasilkataunik').value          = strKal;
-    document.getElementById('tabelhasilkataunik').innerHTML = tabelunik;
+    document.getElementById('jmlKata').value                    = jmlkata;
+    document.getElementById('text-kataunik').value              = strKal;
+    document.getElementById('tabel-hasilkataunik').innerHTML    = tabelunik;
 }
 function nilaiacak() {
     n       = document.getElementById('jumlahacak').value;
