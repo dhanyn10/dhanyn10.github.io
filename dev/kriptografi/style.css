@@ -1,9 +1,0 @@
-.panel-kataunik textarea{
-    min-height: 100px;
-    height: 150px;
-    max-height: 300px;
-}
-#tabel-hasilkataunik tbody{
-    max-height: 400px;
-    overflow: auto;
-}
