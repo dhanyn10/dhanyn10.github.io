@@ -8,6 +8,8 @@
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="css/style.css" rel="stylesheet"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/js.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -30,24 +32,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#">Memulai <span class="sr-only">(current)</span></a>
+                        <li class="">
+                            <a href="#">Memulai</a>
                         </li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
+                        <li class="active"><a href="#">Lesson 1<span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Lesson 1</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
@@ -65,19 +56,56 @@
         </nav>
         <div class="container-fluid">
             <div class="col-sm-12">
-                Oke, mari kita mulai dengan belajar membuat Heading terlebih dulu. Dalam HTML,
-                 terdapat 6 macam heading mulai dari heading 1 hingga 6.
+                Oke, mari kita mulai dengan belajar membuat Heading terlebih dulu. Dalam HTML, 
+                terdapat 6 macam heading mulai dari heading 1 hingga 6. Buatlah kalimat 
+                sebagai berikut ini:<br/><br/>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Teks</th>
+                        <th>Tag</th>
+                    </tr>
+                    <tr>
+                        <td>Latihan Pertama itu menyenangkan</td>
+                        <td>HEADING 1</td>
+                    </tr>
+                    <tr>
+                        <td>Latihan Kedua juga menyenangkan</td>
+                        <td>HEADING 2</td>
+                    </tr>
+                    <tr>
+                        <td>Latihan Ketiga Tak kalah menyenangkan</td>
+                        <td>HEADING 3</td>
+                    </tr>
+                    <tr>
+                        <td>Latihan Keempat masih begitu menyenangkan</td>
+                        <td>HEADING 4</td>
+                    </tr>
+                    <tr>
+                        <td>Latihan Kelima asyik banget</td>
+                        <td>HEADING 5</td>
+                    </tr>
+                    <tr>
+                        <td>Latihan Keenam paling keren</td>
+                        <td>HEADING 6</td>
+                    </tr>
+                </table>
                 <hr/>
             </div>
             <div class="col-sm-6">
-                <textarea></textarea>
+                <textarea id="asalkode" class="col-sm-12">
+Latihan Pertama itu menyenangkan
+Latihan Kedua juga menyenangkan
+Latihan Ketiga Tak kalah menyenangkan
+Latihan Keempat masih begitu menyenangkan
+Latihan Kelima asyik banget
+Latihan Keenam paling keren
+                </textarea>
             </div>
             <div class="col-sm-6">
-                <p></p>
+                <p id="hasilkode"></p>
             </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
