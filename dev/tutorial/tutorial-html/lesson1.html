@@ -7,9 +7,12 @@
         <title>Bootstrap 101 Template</title>
         <!-- Bootstrap -->
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
         <link href="../css/style.css" rel="stylesheet"/>
+        <link href="lesson1.css" rel="stylesheet"/>
         <script src="../js/jquery.min.js"></script>
         <script src="../js/js.js"></script>
+        <script src="lesson1.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -35,17 +38,21 @@
                         <li class="">
                             <a href="index.html">Memulai</a>
                         </li>
-                        <li class="active"><a href="#">Lesson 1<span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Daftar  Tutorial <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Heading</a></li>
+                            <li><a href="#">Paragraf</a></li>
+                            <li><a href="#">Font weight</a></li>
+                        </ul>
+                    </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Lesson 1</a></li>
+                        <li><a href="#">Tentang</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -55,29 +62,46 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="container-fluid">
+            <div class="col-md-12">
+                <h1>Menggunakan Heading</h1>
+            </div>
             <div class="col-sm-12">
                 <p>Oke, mari kita mulai dengan belajar membuat Heading terlebih dulu. Dalam HTML, 
                     terdapat 6 macam heading mulai dari heading 1 hingga 6. Untuk membuat heading,
                     caranya adalah membuat suatu kata atau kalimat berada di dalam tag heading. 
                     contohnya adalah seperti ini: 
                 <code>&lt;h1&gt;heading 1&lt;/h1&gt;</code></p><p>Pada tutorial ini, 
-                buat kalimat "Latihan Pertama itu menyenangkan" menjadi heading 1</p>
+                buat kalimat "Latihan Pertama itu menyenangkan" menjadi <code>heading 1</code></p>
                 
                 <hr/>
             </div>
-            <div class="col-sm-6">
-                <textarea id="asalkode" class="col-sm-12">Latihan Pertama itu menyenangkan</textarea>
-            </div>             
-            <div class="col-sm-6">
-                <p id="hasilkode"></p>
+            <div class="heading" id="heading1">
+                <div class="col-sm-6">
+                    <textarea id="asalkode" class="asalkode col-sm-12">Latihan pertama itu menyenangkan</textarea>
+                </div>             
+                <div class="col-sm-6">
+                    <p id="hasilkode" class="hasilkode"></p>
+                </div>
             </div>
-<!--
-                <textarea id="asalkode" class="col-sm-12">Latihan Kedua juga menyenangkan</textarea>
-                <textarea id="asalkode" class="col-sm-12">Latihan Ketiga Tak kalah menyenangkan</textarea>
-                <textarea id="asalkode" class="col-sm-12">Latihan Keempat masih begitu menyenangkan</textarea>
-                <textarea id="asalkode" class="col-sm-12">Latihan Kelima asyik banget</textarea>
-                <textarea id="asalkode" class="col-sm-12">Latihan Keenam paling keren</textarea>
--->
+            <div class="col-sm-12">
+                <p>Selanjutnya, coba untuk membuat heading yang sama, yaitu heading 2 hingga 6.
+                    kata seperti "kedua", "ketiga" menunjukkan heading yang harus digunakan pada kalimat
+                    di baris tersebut.
+                </p>
+            </div>
+            <div class="heading" id="heading-all">
+                <div class="col-sm-6">
+                    <textarea id="asalkode" class="asalkode col-sm-12">
+Latihan kedua juga menyenangkan
+Latihan ketiga Tak kalah menyenangkan
+Latihan keempat masih begitu menyenangkan
+Latihan kelima asyik banget
+Latihan keenam paling keren</textarea>
+                </div>             
+                <div class="col-sm-6">
+                    <p id="hasilkode" class="hasilkode"></p>
+                </div>
+            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
