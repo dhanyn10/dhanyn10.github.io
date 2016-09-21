@@ -1,0 +1,10 @@
+#heading1 #hasilkode{
+    border: 1px dotted #333;
+}
+#heading1 #asalkode,
+#heading1 #hasilkode{
+    min-height: 120px;
+}
+#heading-all #asalkode{
+    min-height: 120px;
+}
