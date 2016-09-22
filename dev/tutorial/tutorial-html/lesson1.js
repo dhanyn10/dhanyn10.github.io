@@ -41,8 +41,7 @@ $(document).ready(function(){
         //if user already solve task for heading 2 to 6
         if(c_h_all == h_all)
             $("#heading-selesai").css("display","block");
-    }
-    
+    } 
     //disable bracket
     $("#asalkode").keydown(function(kunci){
         if(kunci.which == 219 || kunci.which == 221)
