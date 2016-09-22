@@ -1,6 +1,7 @@
 .hasilkode{
     border: 1px dotted #333;
 }
+
 .asalkode,
 .hasilkode{
     min-height: 120px;
@@ -9,13 +10,16 @@
     -moz-border-radius:4px;
     border-radius:4px;
 }
+
 #heading-all{
     display: none;
 }
+
 #heading-skip,
 #heading-selesai{
     display: none;
 }
+
 #heading-selesai{
     margin-top: 5px;
 }
