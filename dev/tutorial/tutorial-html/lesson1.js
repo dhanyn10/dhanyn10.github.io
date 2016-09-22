@@ -48,11 +48,13 @@ $(document).ready(function(){
         if(kunci.which == 219 || kunci.which == 221)
             return false;
     });
+    
     //skip heading 1
     $("#lewati-heading1").click(function(){
         $("#heading-all").css("display","block");
         $("#heading-skip").css("display","block");
     });
+    
     //skip heading tutorial
     $("#heading-skip").click(function(){
         $("#heading-selesai").css("display","block");
