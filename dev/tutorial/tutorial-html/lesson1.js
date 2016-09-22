@@ -13,8 +13,10 @@ $(document).ready(function(){
         c_h1 = c_h1.replace(new RegExp(">","g"), "]");
         
         //check the input
-        if(c_h1 == "[h1]Latihan pertama itu menyenangkan[/h1]")
-            alert("good");
+        if(c_h1 == "[h1]Latihan pertama itu menyenangkan[/h1]"){
+            $("#heading-all").css("display","block");
+            $("#heading-skip").css("display","block");
+        }
     }
     //for heading 2 to 6
     h_all();
@@ -36,15 +38,23 @@ $(document).ready(function(){
             h_all += "[h5]Latihan kelima asyik banget[/h5]"+"\n";
             h_all += "[h6]Latihan keenam paling keren[/h6]";
         
-        console.info(c_h_all+h_all);
-        
+        //if user already solve task for heading 2 to 6
         if(c_h_all == h_all)
-            alert("good at all");
+            $("#heading-selesai").css("display","block");
     }
     
     //disable bracket
     $("#asalkode").keydown(function(kunci){
         if(kunci.which == 219 || kunci.which == 221)
             return false;
+    });
+    //skip heading 1
+    $("#lewati-heading1").click(function(){
+        $("#heading-all").css("display","block");
+        $("#heading-skip").css("display","block");
+    });
+    //skip heading tutorial
+    $("#heading-skip").click(function(){
+        $("#heading-selesai").css("display","block");
     });
 });
