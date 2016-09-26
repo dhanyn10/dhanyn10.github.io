@@ -33,14 +33,18 @@ $(document).ready(function(){
         
         //check the input
         var h_all  = "[h2]Latihan kedua juga menyenangkan[/h2]"+"\n";
-            h_all += "[h3]Latihan ketiga Tak kalah menyenangkan[/h3]"+"\n";
+            h_all += "[h3]Latihan ketiga tak kalah menyenangkan[/h3]"+"\n";
             h_all += "[h4]Latihan keempat masih begitu menyenangkan[/h4]"+"\n";
             h_all += "[h5]Latihan kelima asyik banget[/h5]"+"\n";
             h_all += "[h6]Latihan keenam paling keren[/h6]";
         
         //if user already solve task for heading 2 to 6
-        if(c_h_all == h_all)
+        if(c_h_all == h_all){
             $("#heading-selesai").css("display","block");
+            
+            //set display position to heading selesai
+            window.location.href = "#heading-selesai";
+        }
     } 
     //disable bracket
     $("#asalkode").keydown(function(kunci){
