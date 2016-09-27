@@ -2,3 +2,7 @@
     display:none;
     height: 100px;
 }
+#italic,
+#strong{
+    display: none;
+}

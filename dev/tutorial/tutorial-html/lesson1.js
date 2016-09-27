@@ -15,7 +15,8 @@ $(document).ready(function(){
             mybold += "telah mengakuisisi perusahaan teknologi ";
             mybold += "terbesar kedua di dunia";
         if(kode == mybold){
-            alert("berhasil");
+            $("#italic").css("display","block");
+            window.location.href = "#italic";
         }
     }
     
