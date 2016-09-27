@@ -26,4 +26,14 @@ $(document).ready(function(){
         $("#hasilkode-italic").html(kode);
         gantiTag(kode);
     }
+    
+    //skip button
+    $("#bold #lewati").click(function(){
+        $("#italic").css("display","block");
+        window.location.href = "#italic";
+    });
+    $("#italic #lewati").click(function(){
+        $("#strong").css("display","block");
+        window.location.href = "#strong";
+    });
 });
