@@ -1,8 +1,11 @@
-#lesson1-selesai{
-    display:none;
-    height: 100px;
-}
 #italic,
-#strong{
+#underline,
+#lesson1-selesai{
     display: none;
+}
+#bold,
+#italic,
+#underline,
+#lesson1-selesai{
+    height: 100px;
 }
