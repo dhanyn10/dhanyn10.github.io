@@ -69,9 +69,10 @@
         </nav>
         <div class="container-fluid">
             <div class="col-md-12">
-                <h1>Menggunakan Text Formatting</h1>
-                <p>Anda akan belajar tentang cara menggunakan text formatting. 
-                    text formatting digunakan untuk mengatur format teks,
+                <h1>Menggunakan Text Formatting dan Paragraf</h1>
+                <p>Anda akan belajar tentang cara menggunakan text formatting dan paragraf. 
+                    text formatting digunakan untuk mengatur format teks, sementara paragraf
+                    digunakan untuk mengatur agar suatu teks ditampilkan seperti sebuah paragraf,
                     jenis-jenis text formatting yang akan Anda pelajari yaitu 
                     <b>bold</b>, <i>italic</i>, <u>underline</u>.
                 </p>
@@ -90,7 +91,7 @@
                     <p id="hasilkode-bold" class="hasilkode col-sm-12"></p>
                 </div>
                 <div class="col-sm-12">
-                    <button id="lewati" class="btn btn-default">Lewati</button>
+                    <button class="btn btn-default lewati">Lewati</button>
                 </div>
             </div>
             <div id="italic">
@@ -104,7 +105,7 @@
                     <p id="hasilkode-italic" class="hasilkode col-sm-12"></p>
                 </div>
                 <div class="col-sm-12">
-                    <button id="lewati" class="btn btn-default">Lewati</button>
+                    <button class="btn btn-default lewati">Lewati</button>
                 </div>
             </div>
             <div id="underline">
@@ -119,7 +120,43 @@
                     <p id="hasilkode-underline" class="hasilkode col-sm-12"></p>
                 </div>
                 <div class="col-sm-12">
-                    <button id="lewati" class="btn btn-default">Lewati</button>
+                    <button class="btn btn-default lewati">Lewati</button>
+                </div>
+            </div>
+            <div id="paragraf">
+                <div class="col-sm-12">
+                    <p>Selanjutnya Anda akan mencoba menggunakan fungsi paragraf, 
+                    caranya adalah dengan mengapit suatu kalimat atau kata dengan tag p
+                    seperti ini : <code>&lt;p&gt;long text&lt;/p&gt;</code></p>
+                    <p>Pada uji coba kali ini, buat teks dibawah ini menjadi beberapa paragraf dengan 
+                    batasan yang telah ditentukan di tabel berikut</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Kalimat</th>
+                            <th>paragraf ke</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Maecenas mattis mattis diam eget posuere.</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="asalkode-paragraf" class="asalkode form-control col-sm-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.Maecenas mattis mattis diam eget posuere.</textarea>
+                </div>
+                <div class="col-sm-6">
+                    <p id="hasilkode-paragraf" class="hasilkode col-sm-12"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default lewati">Lewati</button>
                 </div>
             </div>
             <div id="lesson1-selesai" class="col-sm-12">

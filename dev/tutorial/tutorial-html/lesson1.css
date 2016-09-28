@@ -1,11 +1,16 @@
+/*
+ * HIDE DISPLAY
+*/
 #italic,
 #underline,
+#paragraf,
 #lesson1-selesai{
     display: none;
 }
 #bold,
 #italic,
 #underline,
+#paragraf,
 #lesson1-selesai{
-    height: 100px;
+    min-height: 200px;
 }

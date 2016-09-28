@@ -5,28 +5,37 @@ $(document).ready(function(){
         $(".asalkode").keydown(function(k){
             //219 keycode for "["
             //221 keycode for "]"
-            if(k.which == 219 || k.which == 221)
+            if(k.which == 219 || k.which == 221 || k.which == 32)
                 {
                     return false;
                 }
         });
     });
     
-    //auto run
+    /* ===================================
+     * AUTO RUN
+     * ===================================
+     */
+    //auto run for bold lesson
     textBold();
-    textItalic();
-    textUnderline();
     $("#asalkode-bold").keyup(textBold);
+    //auto run for italic lesson
+    textItalic();
     $("#asalkode-italic").keyup(textItalic);
+    //auto run for underline lesson
+    textUnderline();
     $("#asalkode-underline").keyup(textUnderline);
+    //auto run for paragraf lesson
+    textParagraf();
+    $("#asalkode-paragraf").keyup(textParagraf);
     
     //bold auto run
     function textBold(k){
         kode = $("#asalkode-bold").val();
         $("#hasilkode-bold").html(kode);
         kode = gantiTag(kode);
-        var textBold = "Seperti diketahui oleh publik bahwa [b]myBold[/b] dari Web Tutorial kini semakin terkenal";
-        if(kode == textBold)
+        var text_Bold = "Seperti diketahui oleh publik bahwa [b]myBold[/b] dari Web Tutorial kini semakin terkenal";
+        if(kode == text_Bold)
         {
             $("#italic").css("display","block");
             window.location.href = "#italic";
@@ -39,8 +48,8 @@ $(document).ready(function(){
         kode = $("#asalkode-italic").val();
         $("#hasilkode-italic").html(kode);
         kode = gantiTag(kode);
-        var textItalic = "CEO [i]The Italic[/i] diketahui hendak menggelar lomba di Web Tutorial 1 minggu lagi";
-        if(kode == textItalic)
+        var text_Italic = "CEO [i]The Italic[/i] diketahui hendak menggelar lomba di Web Tutorial 1 minggu lagi";
+        if(kode == text_Italic)
             {
                 $("#underline").css("display","block");
                 window.location.href = "#underline";
@@ -53,13 +62,29 @@ $(document).ready(function(){
         kode = $("#asalkode-underline").val();
         $("#hasilkode-underline").html(kode);
         kode = gantiTag(kode);
-        var textUnderline = "Web Tutorial menjadi pusat [u]percobaan teknologi baru[/u] demi kemajuan dunia";
-        if(kode == textUnderline)
+        var text_Underline = "Web Tutorial menjadi pusat [u]percobaan teknologi baru[/u] demi kemajuan dunia";
+        if(kode == text_Underline)
+            {
+                $("#paragraf").css("display","block");
+                window.location.href = "#paragraf";
+            }
+        
+    }
+    
+    //paragraf auto run
+    function textParagraf(k)
+    {
+        kode = $("#asalkode-paragraf").val();
+        $("#hasilkode-paragraf").html(kode);
+        kode = gantiTag(kode);
+        var text_Paragraf  = "[p]Lorem ipsum dolor sit amet, consectetur adipiscing elit.[/p]";
+            text_Paragraf += "[p]Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.[/p]";
+            text_Paragraf += "[p]Maecenas mattis mattis diam eget posuere.[/p]";
+        if(kode == text_Paragraf)
             {
                 $("#lesson1-selesai").css("display","block");
                 window.location.href = "#lesson1-selesai";
             }
-        
     }
     
     /* ======================================
@@ -68,20 +93,26 @@ $(document).ready(function(){
     */
     
     //skip bold lesson
-    $("#bold #lewati").click(function(){
+    $("#bold .lewati").eq(0).click(function(){
         $("#italic").css("display","block");
-        window.location.href = "#italic";
+        window.scrollTo(0,document.body.scrollHeight);
     });
     
     //skip italic lesson
-    $("#italic #lewati").click(function(){
+    $("#italic .lewati").eq(0).click(function(){
         $("#underline").css("display","block");
-        window.location.href = "#underline";
+        window.scrollTo(0,document.body.scrollHeight);
     });
     
     //skip underline lesson
-    $("#underline #lewati").click(function(){
+    $("#underline .lewati").eq(0).click(function(){
+        $("#paragraf").css("display","block");
+        window.scrollTo(0,document.body.scrollHeight);
+    });
+    
+    //skip paragraf lesson
+    $("#paragraf .lewati").eq(0).click(function(){
         $("#lesson1-selesai").css("display","block");
-        window.location.href = "#lesson1-selesai";
+        window.scrollTo(0,document.body.scrollHeight);
     });
 });
