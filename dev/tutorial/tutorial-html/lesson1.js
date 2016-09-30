@@ -38,7 +38,7 @@ $(document).ready(function(){
         if(kode == text_Bold)
         {
             $("#italic").css("display","block");
-            window.location.href = "#italic";
+            window.scrollTo(0,document.body.scrollHeight);
         }
     }
     
@@ -52,7 +52,7 @@ $(document).ready(function(){
         if(kode == text_Italic)
             {
                 $("#underline").css("display","block");
-                window.location.href = "#underline";
+                window.scrollTo(0,document.body.scrollHeight);
             }
     }
     
@@ -66,7 +66,7 @@ $(document).ready(function(){
         if(kode == text_Underline)
             {
                 $("#paragraf").css("display","block");
-                window.location.href = "#paragraf";
+                window.scrollTo(0,document.body.scrollHeight);
             }
         
     }
@@ -77,13 +77,13 @@ $(document).ready(function(){
         kode = $("#asalkode-paragraf").val();
         $("#hasilkode-paragraf").html(kode);
         kode = gantiTag(kode);
-        var text_Paragraf  = "[p]Lorem ipsum dolor sit amet, consectetur adipiscing elit.[/p]";
-            text_Paragraf += "[p]Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.[/p]";
+        var text_Paragraf  = "[p]Lorem ipsum dolor sit amet, consectetur adipiscing elit.[/p]\n";
+            text_Paragraf += "[p]Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.[/p]\n";
             text_Paragraf += "[p]Maecenas mattis mattis diam eget posuere.[/p]";
         if(kode == text_Paragraf)
             {
                 $("#lesson1-selesai").css("display","block");
-                window.location.href = "#lesson1-selesai";
+                window.scrollTo(0,document.body.scrollHeight);
             }
     }
     
