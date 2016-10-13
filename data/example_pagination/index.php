@@ -80,7 +80,11 @@ $output_html .= "</table>";
     </head>
     <body>
         <div class="container">
-            <p>Tampilkan hingga : <input class='form-control' value='<?php echo $default_batas?>'/> baris</p>
+            <div class="form-group" style="float:left">
+                <span>Tampilkan hingga :</span>
+                <input value='<?php echo $default_batas?>'/>
+                <span>baris</span>
+            </div>
             <!--tayangkan tabel country-->
             <?php echo $output_html?>
             <?php echo $html_paging?>
