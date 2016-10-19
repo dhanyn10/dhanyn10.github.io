@@ -69,37 +69,48 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="container-fluid">
-            <h1>Menggunakan Styles</h1><hr/>
-            <p>Styles digunakan untuk membuat efek-efek css namun masih di dalam tag html. Untuk menerapkan styles, gunakan cara ini : <code>&lt;tagname style="nama_style:value_style;"&gt;...&lt;/tagname&gt;</code></p>
+            <div class="col-sm-12">
+                <h1>Menggunakan Styles</h1><hr/>
+                <p>Styles digunakan untuk membuat efek-efek css namun masih di dalam tag html. Untuk menerapkan styles, gunakan cara ini : <code>&lt;tagname style="nama_style:value_style;"&gt;...&lt;/tagname&gt;</code></p>
+            </div>
             <div id="blue">
-                <p>Coba untuk membuat warna teks menjadi biru pada tulisan di bawah ini dengan kode <code>&lt;p style="color:blue"&gt;text&lt;/p&gt;</code></p>
+                <div class="col-sm-12">
+                    <p>Coba untuk membuat warna teks menjadi biru pada tulisan di bawah ini dengan kode <code>&lt;p style="color:blue"&gt;text&lt;/p&gt;</code></p>
+                </div>                
                 <div class="col-sm-6">
                     <textarea class="col-sm-12 form-control asalkode">Web Tutorial</textarea>
                 </div>
                 <div class="col-sm-6">
                     <p class="col-sm-12 hasilkode"></p>
                 </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default" id="skip-blue">Lewati</button>
+                </div>
             </div>
             <div id="merah-kuning-hijau">
-                <p>Selanjutnya, buat teks di tabel dibawah berwarna seperti ketentuan masing-masing</p>
-                <table class="table table-bordered">
-                    <tr>
-                        <th>Teks</th>
-                        <th>Styles</th>
-                    </tr>
-                    <tr>
-                        <td>merah menandakan berhenti atau bahaya</td>
-                        <td><code>color:red</code></td>
-                    </tr>
-                    <tr>
-                        <td>orange menandakan bersiap atau siaga</td>
-                        <td><code>color:orange</code></td>
-                    </tr>
-                    <tr>
-                        <td>hijau menandakan teruskan atau normal</td>
-                        <td><code>color:green</code></td>
-                    </tr>
-                </table>
+                <div class="col-sm-12">
+                    <p>Selanjutnya, buat teks di tabel dibawah berwarna seperti ketentuan masing-masing</p>
+                </div>
+                <div class="col-sm-12">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Teks</th>
+                            <th>Styles</th>
+                        </tr>
+                        <tr>
+                            <td>merah menandakan berhenti atau bahaya</td>
+                            <td><code>color:red</code></td>
+                        </tr>
+                        <tr>
+                            <td>orange menandakan bersiap atau siaga</td>
+                            <td><code>color:orange</code></td>
+                        </tr>
+                        <tr>
+                            <td>hijau menandakan teruskan atau normal</td>
+                            <td><code>color:green</code></td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="col-sm-6">
                     <textarea class="col-sm-12 form-control asalkode">
 merah menandakan berhenti atau bahaya, 
@@ -108,6 +119,9 @@ hijau menndakan teruskan atau normal.</textarea>
                 </div>
                 <div class="col-sm-6">
                     <p class="col-sm-12 form-control hasilkode"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default" id="skip-merah-kuning-hijau">Lewati</button>
                 </div>
             </div>
         </div>
