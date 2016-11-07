@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <title>coba saja</title>
+        <link href="https://dhanyn10.github.io/data/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <script>
+            function hasil(data)
+            {
+                panjang_data = data.feed.entry.length;
+//                html_list = "<ul class='list-group'>";
+                console.info("banyak data : "+ panjang_data);
+                arrayentry = new Array();
+                for(i = 0; i < panjang_data; i++)
+                {
+                    kategori = new Array();
+                    for(c = 0; c < data.feed.entry[i].category.length; c++)
+                    {
+                        kategori[c] = data.feed.entry[i].category[c];
+                    }
+                    arrayentry[i] = data.feed.entry[i].title.$t + " | " + data.feed.entry[i].published.$t + " | " + data.feed.entry[i].updated.$t + " | " + data.feed.entry[i].category;
+                    //html_list += "<li class='list-group-item'>" + data.feed.entry[i].title.$t + "</li>";
+                }
+                arrayentry.sort();
+                console.info(data.feed.entry);
+                //html_list += "</ul>";
+                //document.write(html_list);
+                for(i = 0; i < panjang_data; i++)
+                {
+                    console.info(arrayentry[i]);
+                }
+            }
+            $(document).ready(hasil);
+        </script>
+        <script src="http://dhanynurdiansyah.blogspot.com/feeds/posts/default/?alt=json-in-script&callback=hasil&max-results=9999"></script>
+    </head>
+    <body>
+    </body>
+</html>

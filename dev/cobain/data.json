@@ -1,0 +1,1829 @@
+gdata.io.handleScriptLoaded({
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "feed": {
+        "xmlns": "http://www.w3.org/2005/Atom",
+        "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+        "xmlns$blogger": "http://schemas.google.com/blogger/2008",
+        "xmlns$georss": "http://www.georss.org/georss",
+        "xmlns$gd": "http://schemas.google.com/g/2005",
+        "xmlns$thr": "http://purl.org/syndication/thread/1.0",
+        "id": {
+            "$t": "tag:blogger.com,1999:blog-1698004972072743037"
+        },
+        "updated": {
+            "$t": "2016-11-06T19:34:50.093+07:00"
+        },
+        "category": [{
+            "term": "Code"
+        }, {
+            "term": "HTML"
+        }, {
+            "term": "Java"
+        }, {
+            "term": "CSS"
+        }, {
+            "term": "Javascript"
+        }, {
+            "term": "Blog"
+        }, {
+            "term": "PHP"
+        }, {
+            "term": "Umum"
+        }, {
+            "term": "Programming"
+        }, {
+            "term": "Kuliah"
+        }, {
+            "term": "CodeIgniter"
+        }, {
+            "term": "Octopress"
+        }, {
+            "term": "Widget"
+        }, {
+            "term": "internet"
+        }, {
+            "term": "Blogger"
+        }, {
+            "term": "Game"
+        }, {
+            "term": "Post"
+        }, {
+            "term": "Teknologi"
+        }, {
+            "term": "C#"
+        }, {
+            "term": "JSON"
+        }, {
+            "term": "Koding"
+        }, {
+            "term": "Komputer"
+        }, {
+            "term": "Lingkungan"
+        }, {
+            "term": "Pendidikan"
+        }, {
+            "term": "XML"
+        }],
+        "title": {
+            "type": "text",
+            "$t": "Dhany Nurdiansyah"
+        },
+        "subtitle": {
+            "type": "html",
+            "$t": "blog belajar"
+        },
+        "link": [{
+            "rel": "http://schemas.google.com/g/2005#feed",
+            "type": "application/atom+xml",
+            "href": "http:\/\/www.dhan.web.id\/feeds\/posts\/default"
+        }, {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default?alt=json-in-script"
+        }, {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "http:\/\/www.dhan.web.id\/"
+        }, {
+            "rel": "hub",
+            "href": "http://pubsubhubbub.appspot.com/"
+        }, {
+            "rel": "next",
+            "type": "application/atom+xml",
+            "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default?alt=json-in-script\u0026start-index=26\u0026max-results=25"
+        }],
+        "author": [{
+            "name": {
+                "$t": "Dhany Nurdiansyah"
+            },
+            "email": {
+                "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+                "rel": "http://schemas.google.com/g/2005#thumbnail",
+                "width": "32",
+                "height": "32",
+                "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+            }
+        }],
+        "generator": {
+            "version": "7.00",
+            "uri": "http://www.blogger.com",
+            "$t": "Blogger"
+        },
+        "openSearch$totalResults": {
+            "$t": "110"
+        },
+        "openSearch$startIndex": {
+            "$t": "1"
+        },
+        "openSearch$itemsPerPage": {
+            "$t": "25"
+        },
+        "entry": [{
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-6958635664160878920"
+            },
+            "published": {
+                "$t": "2016-11-06T09:38:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-11-06T09:38:45.051+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Blogger"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Membuat Judul Posting Blogger menjadi Rata Tengah"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nBerkali-kali saya melihat tampilan blog yang terlihat kurang indah \nkarena judul teksnya masih rata kiri, hal itu terlihat semakin jelas \npada post dengan judul yang melebihi 3 kata, oleh karena itu, kemudian \nsaya mencari cara di Internet yaitu tutorial untuk mengganti properti \nperataan teks untuk judul posting blogger supaya menjadi rata tengah.\n\n\nDari\n sekian banyak artikel yang beredar di "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/6958635664160878920\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/11\/membuat-judul-posting-blogger-menjadi.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6958635664160878920"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6958635664160878920"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/11\/membuat-judul-posting-blogger-menjadi.html",
+                "title": "Membuat Judul Posting Blogger menjadi Rata Tengah"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-3545331998104189416"
+            },
+            "published": {
+                "$t": "2016-10-30T10:48:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-11-04T09:40:34.442+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "SDLC - Model Spiral - Pengertian, Pro dan Kontra"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\nSDLC model Spiral menggabungkan model pengembangan secara iteratif dengan sistematis, aspek dikendalikan dari waterfall model. Model spiral adalah kombinasi dari model iterative development process dan model sequential linear development. Dengan menggunakan model ini maka dapat memungkinkan melakukan rilis suatu produk secara bertahap atau melakukan perbaikan bertahap melalui proses iterasi.\n\n"
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/3545331998104189416\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/sdlc-model-spiral-pengertian-pro-dan-kontra.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3545331998104189416"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3545331998104189416"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/sdlc-model-spiral-pengertian-pro-dan-kontra.html",
+                "title": "SDLC - Model Spiral - Pengertian, Pro dan Kontra"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-8271532663662736156"
+            },
+            "published": {
+                "$t": "2016-10-23T10:33:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-23T10:34:03.877+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Menulis Rumus Matematika di Blogger dengan Mathtype"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\nSampai saat ini, banyak blog dan website masih menggunakan foto untuk menampilkan operasi perhitungan matematika di dalam posting untuk kasus yang tergolong kompleks, misalkan integral, limit, pembagian, pemisalan, dan lainnya.\nPenggunaan foto seperti ini, cenderung menguras resource database web yang biasanya terbatas. Selain itu, biasanya penulisan kalkulasi matematika dalam bentuk foto "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/8271532663662736156\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/menulis-rumus-matematika-di-blogger.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8271532663662736156"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8271532663662736156"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/menulis-rumus-matematika-di-blogger.html",
+                "title": "Menulis Rumus Matematika di Blogger dengan Mathtype"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/3.bp.blogspot.com\/-dPPD1hAvkyU\/VoIERlYM7BI\/AAAAAAAACXw\/8R6nVHGJ5oI24keNumG9X0VnzTKHLaL_ACPcB\/s72-c\/MathType.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-3924021028605122561"
+            },
+            "published": {
+                "$t": "2016-10-22T15:06:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-22T15:06:58.281+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Menggunakan Fungsi di dalam Model"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nSeperti pada tulisan sebelumnya, yaitu codeigniter : menggunakan model, view, dan controller, Anda telah mengetahui bahwa model digunakan untuk menyediakan data yang akan diberikan kepada controller. File model yang telah Anda buat pada tulisan sebelumnya masih berada dalam variabel, selanjutnya akan dibahas tentang menyediakan data melalui suatu fungsi di dalam model.\n\n\nBaca panduan "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/3924021028605122561\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-fungsi-di-dalam-model.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3924021028605122561"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3924021028605122561"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-fungsi-di-dalam-model.html",
+                "title": "CodeIgniter : Menggunakan Fungsi di dalam Model"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-5920828303365510189"
+            },
+            "published": {
+                "$t": "2016-10-11T09:23:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-11T09:23:27.003+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Pengertian Sistem Operasi"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nDalam ilmu komputer, Sistem Operasi atau dalam bahasa inggris Operating Sistem (biasanya disingkat os) adalah perangkat lunak sistem yang bertugas untuk melakukan kontrol dan manajemen perangkat keras serta operasi-operasi dasar sistem, termasuk menjalankan software seperti program program pengolah kata dan browser. \n\n\nSecara umum, sistem operasi adalah software pada lapisan pertama yang "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/5920828303365510189\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/pengertian-sistem-operasi.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5920828303365510189"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5920828303365510189"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/pengertian-sistem-operasi.html",
+                "title": "Pengertian Sistem Operasi"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-5681133118994051366"
+            },
+            "published": {
+                "$t": "2016-10-10T20:14:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-10T20:14:12.965+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Membuat Posting Terkait dengan Bootstrap"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\nBootstrap semakin populer, dengan desain keren, sederhana, namun mudah untuk dipelajari membuat banyak developer tertarik untuk mencoba mengaplikasikan gaya tampilan bootstrap ke berbagai elemen situs web yang dikembangkan. Saya ikut memanfaatkan bootstrap untuk membuat inovasi widget\/gadget related post\/posting terkait. Jika Anda tertarik untuk memasang widget ini, silahkan ikuti petunjuk "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/5681133118994051366\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/membuat-posting-terkait-dengan-bootstrap.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5681133118994051366"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5681133118994051366"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/membuat-posting-terkait-dengan-bootstrap.html",
+                "title": "Membuat Posting Terkait dengan Bootstrap"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-4699419436540462943"
+            },
+            "published": {
+                "$t": "2016-10-09T10:55:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-09T10:55:37.805+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Javascript : Mendapatkan Nilai Unik dari Array"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\nBeberapa waktu lalu saya membutuhkan kode javascript agar suatu nilai dalam array itu saling berbeda dengan lainnya. Sempat mencari di stackoverflow namun algoritma-algoritma yang ada tidak bisa saya pahami dengan mudah, maka dari itu saya akhirnya memutuskan untuk membuat sendiri algoritma untuk mendapatkan value unik di array.\n\n\n\nmisalkan Anda memiliki data array seperti ini\n\n\nSelanjutnya, "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/4699419436540462943\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/javascript-mendapatkan-nilai-unik-dari-array.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/4699419436540462943"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/4699419436540462943"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/javascript-mendapatkan-nilai-unik-dari-array.html",
+                "title": "Javascript : Mendapatkan Nilai Unik dari Array"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-8578590988320348613"
+            },
+            "published": {
+                "$t": "2016-10-07T13:06:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-11-06T10:40:50.707+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Menggunakan Model, View, dan Controller"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nDalam bahasan sebelumnya, Anda telah belajar tentang cara menggunakan controller dan view dengan variabel di codeigniter, pada tulisan ini, akan dibahas lebih lengkap lagi yaitu ditambah dengan model.\n\nbaca juga : codeigniter tahap persiapan\n\nModel\n\nPada ci, model digunakan untuk menampung data di dalam suatu variabel. Buat file m_mvc_data.php di ci\/application\/models\/, isi dengan kode di bawah"
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/8578590988320348613\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-model-view-dan-controller.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8578590988320348613"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8578590988320348613"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-model-view-dan-controller.html",
+                "title": "CodeIgniter : Menggunakan Model, View, dan Controller"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-3193649627619339994"
+            },
+            "published": {
+                "$t": "2016-10-01T17:20:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-22T13:31:28.183+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Menggunakan Controller dan View"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nBerikut\n ini adalah contoh codeigniter yang menggunakan controller dan view \nuntuk menampilkan suatu halaman. controller berperan untuk \nmemaggil\/memuat halaman view, sementara view menampilkan interface untuk\n pengguna.\n\nbaca tulisan sebelumnya tentang cara menggunakan controller saja, atau panduan codeigniter Tahap Persiapan\nbuat file c_controller_dan_view.php di lokasi ci\/application\/"
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/3193649627619339994\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-controller-dan-view.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3193649627619339994"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3193649627619339994"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-menggunakan-controller-dan-view.html",
+                "title": "CodeIgniter : Menggunakan Controller dan View"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-3018614871123693954"
+            },
+            "published": {
+                "$t": "2016-10-01T07:55:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-22T13:31:06.941+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Controller dan View dengan Variabel"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nContoh dari controller dan view berikut menunjukkan cara memanfaatkan fleksibilitas, didalam controller, Anda bisa membuat variabel array asosiatif $data, kemudian membuat element dengan nama pesan yang diisi dengan pesan, lalu selanjutnya ditampilkan melalui view.\n\n\nbaca tulisan sebelumnya tentang menggunakan controller dan view, atau panduan codeigniter Tahap Persiapan\n\nBerikut ini adalah "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/3018614871123693954\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-controller-dan-view-dengan-variabel.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3018614871123693954"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3018614871123693954"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/10\/codeigniter-controller-dan-view-dengan-variabel.html",
+                "title": "CodeIgniter : Controller dan View dengan Variabel"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-2417174431964073996"
+            },
+            "published": {
+                "$t": "2016-09-15T09:06:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-22T13:30:48.899+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Tahap Persiapan"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nCodeIngniter adalah kerangka kerja atau dalam bahasa inggrisnya framework pengembangan aplikasi dengan bahasa pemrograman PHP. Dengan adanya ci(CodeIgniter), pengembang dapat dengan mudah menghasilkan program lebih cepat dengan mengikuti pola kerangka kerja yang telah disiapkan. Didalam framework ini, terdapat berbagai macam library untuk dimanfaatkan oleh pengembang dalam mendukung proses "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/2417174431964073996\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/09\/codeigniter-tahap-persiapan.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2417174431964073996"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2417174431964073996"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/09\/codeigniter-tahap-persiapan.html",
+                "title": "CodeIgniter : Tahap Persiapan"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-6604076672862815010"
+            },
+            "published": {
+                "$t": "2016-09-07T21:29:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-22T13:30:26.730+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CodeIgniter"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CodeIgniter : Hanya Menggunakan Controller"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nProgram paling dasar yang bisa dibuat dengan menggunakan fungsionalitas Codeigniter adalah dengan hanya menggunakan controller. Karena bagian ini adalah komponen utama dari konsep MVC, sementara view dan model adalah pendukung untuk membuat program menjadi lebih dinamis dan terstruktur. Semua program dibuat dengan peranan controller yang berfungsi mengatur segala yang akan dijalankan dan "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/6604076672862815010\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/09\/codeigniter-hanya-menggunakan-controller.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6604076672862815010"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6604076672862815010"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/09\/codeigniter-hanya-menggunakan-controller.html",
+                "title": "CodeIgniter : Hanya Menggunakan Controller"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-2371896649013654061"
+            },
+            "published": {
+                "$t": "2016-08-02T12:43:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-08-02T12:43:52.182+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Blogger"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Embed Github Repository kedalam Posting Blogger"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\nGithub adalah layanan web untuk proyek pengembangan berbagai macam perangkat lunak dengan sistem pengontrol versi(version control). Di situs tersebut, Anda bisa menyimpan berbagai macam file yaitu koding, gambar, dan berbagai jenis file lainnya.\n\nGithub biasanya dimanfaatkan untuk pengembangan proyek bersama dengan anggota tim atau biasa disebut sebagai kontributor. Dalam upaya mempermudah "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/2371896649013654061\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/08\/embed-github-repository-kedalam-posting.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2371896649013654061"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2371896649013654061"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/08\/embed-github-repository-kedalam-posting.html",
+                "title": "Embed Github Repository kedalam Posting Blogger"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-8561120165583106402"
+            },
+            "published": {
+                "$t": "2016-07-27T19:15:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-09-29T20:32:19.804+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CSS"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "CSS - Cara Print Halaman Website tanpa Header dan Footer"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nBerjumpa kembali pembaca, pada kesempatan ini saya akan memberikan petunjuk mengenai cara untuk mencetak\/print halaman website tanpa Header dan Footer, atau bisa juga dikatakan menghilangkan informasi page, seperti url, judul halaman, tanggal, nomor, dan jumlah halaman. Tutorial ini menggunakan css untuk mengatur bagian dari tampilan yang akan dicetak.\n\n\n\n\nBerikut ini adalah contoh langsung "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/8561120165583106402\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/07\/css-cara-print-halaman-website-tanpa.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8561120165583106402"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8561120165583106402"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/07\/css-cara-print-halaman-website-tanpa.html",
+                "title": "CSS - Cara Print Halaman Website tanpa Header dan Footer"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-8235553078222516490"
+            },
+            "published": {
+                "$t": "2016-05-24T15:42:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-11-06T10:29:48.551+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "SDLC - Model Iteratif - Pengertian, Pro dan Kontra"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\nSDLC model Iteratif dimulai dengan sebuah implementasi sederhana dari suatu set software requirement, kemudian secara iteratif mengembangkan sistem yang ditandai dengan peningkatan versi hingga sistem lengkap berhasil diimplementasikan dan siap untuk digunakan.\n\nSebuah siklus model iteratif tidak dimulai dengan persyaratan spesifikasi software secara lengkap. Sebaliknya, pengembangan dimulai "
+            },
+            "link": [{
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8235553078222516490"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/8235553078222516490"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/05\/sdlc-model-iteratif-pengertian-pro-kontra.html",
+                "title": "SDLC - Model Iteratif - Pengertian, Pro dan Kontra"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }]
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-6218036312516982070"
+            },
+            "published": {
+                "$t": "2016-05-14T15:36:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-05-14T15:36:40.400+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CSS"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Pure Javascript - Membuat Image Preview"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\n\nPada tulisan ini, saya bagikan cara membuat Image Preview dengan menggunakan Javascript murni(tanpa jquery). Cara kerja dari image preview ini adalah dengan mengambil file gambar terlebih dahulu pada penyimpanan lokal komputer Anda, kemudian menyimpannya dalam bentuk object, dan mengaturnya sebagai bagian dari properti css. Sementara itu, untuk menggunakan image preview ini adalah dengan "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/6218036312516982070\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/05\/pure-javascript-membuat-image-preview.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6218036312516982070"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6218036312516982070"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/05\/pure-javascript-membuat-image-preview.html",
+                "title": "Pure Javascript - Membuat Image Preview"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/4.bp.blogspot.com\/-5A5bv3tADX0\/Vzbip5FYJEI\/AAAAAAAACeI\/X5wBVy5tc28dhZ_B0E7q3YvD4ONVZXepgCLcB\/s72-c\/javascript%2Bimage%2Bpreview.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-2157450211228915465"
+            },
+            "published": {
+                "$t": "2016-03-15T21:25:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-13T10:03:45.865+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "PHP - Membuat Paging Halaman dengan PHP dan MySQL"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nKetika di suatu website memiliki banyak tulisan, maka sudah saatnya untuk dibangun sebuah sistem halaman\/paging untuk menayangkannya, hal ini dilakukan agar pengguna bisa lebih nyaman ketika berinteraksi dengan website. Andaikan jika terdapat situs yang memiliki ratusan atau ribuan artikel, bahkan mungkin lebih dari itu, dan semua daftar judul artikelnya ditayangkan total tentu tidak nyaman "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/2157450211228915465\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/php-membuat-paging-halaman-dengan-php.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2157450211228915465"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2157450211228915465"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/php-membuat-paging-halaman-dengan-php.html",
+                "title": "PHP - Membuat Paging Halaman dengan PHP dan MySQL"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/1.bp.blogspot.com\/-YkmgMFsVluk\/VufP1jRe24I\/AAAAAAAACcw\/upNG96MiRdQ0T_OLFlr1EsxDN_gSJmCwg\/s72-c\/php%2Bpaging%2B-%2Bdaftar%2Bjudul.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-962789723324437800"
+            },
+            "published": {
+                "$t": "2016-03-10T10:48:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-11-06T10:39:19.058+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "SDLC : Pengertian Waterfall Model | Keuntungan - Kelemahan"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nModel SDLC Waterfall merupakan metode dalam mengerjakan pengembangan software dimana setiap fase harus dikerjakan dulu sebelum fase berikutnya dijalankan, berikut ini adalah tahap-tahap dari metode SDLC Waterfall:\n\n\nRequirement gathering and Analysis:\nsemua requirement yang dibutuhkan untuk mengembangkan sistem dimasukkan dan didokumentasikan di sebuah dokumen requirement specification.\n\n\n"
+            },
+            "link": [{
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/962789723324437800"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/962789723324437800"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/sdlc-pengertian-waterfall-model.html",
+                "title": "SDLC : Pengertian Waterfall Model | Keuntungan - Kelemahan"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }]
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-5469191961994771075"
+            },
+            "published": {
+                "$t": "2016-03-08T16:38:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-23T07:31:08.369+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Sebuah Sejarah Singkat dari JavaScript"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\n\nJavascript dibuat dalam 10 hari pada Mei 1995 oleh Brendan Eich, bekerja di Netscape(telah berubah nama menjadi Mozilla). JavaScript tidak selalu dikenal sebagai JavaScript, nama aslinya adalah Mocha, nama tersebut diberikan oleh Marc Andreesen sebagai pendiri dari Netscape. Pada September tahun 1995 nama Mocha diubah menjadi LiveScript, kemudian di bulan Desember pada tahun yang sama, "
+            },
+            "link": [{
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5469191961994771075"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5469191961994771075"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/sebuah-sejarah-singkat-dari-javascript.html",
+                "title": "Sebuah Sejarah Singkat dari JavaScript"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/2.bp.blogspot.com\/-wPT1RdfFElc\/Vt5DxW_WkxI\/AAAAAAAACcA\/pgOTQ3ZGkUU\/s72-c\/Sejarah%2Bsingkat%2BJavaScript.jpg",
+                "height": "72",
+                "width": "72"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-4303239734570966107"
+            },
+            "published": {
+                "$t": "2016-03-06T17:55:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-09-29T20:34:08.213+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "PHP"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "XML"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "PHP - Membuat Data XML Menjadi Tabel HTML"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nXML merupakan singkatan dari eXtensible Markup Language, XML merupakan bahasa markup untuk membuat dokumen markup untuk keperluan pertukaran data antar sistem. Tujuan dari penggunaan XML agar data yang dipertukarkan tidak ambigu, karena data-data didalamnya sudah berada dalam tag-tag dan atribut tertentu untuk menegaskan jenis informasi yang dibawa.\n\n\n\n\n\n\n\nPada kesempatan ini, saya akan "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/4303239734570966107\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/php-membuat-data-xml-menjadi-tabel-html.html#comment-form",
+                "title": "5 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/4303239734570966107"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/4303239734570966107"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/php-membuat-data-xml-menjadi-tabel-html.html",
+                "title": "PHP - Membuat Data XML Menjadi Tabel HTML"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/3.bp.blogspot.com\/-zfnEC85heT4\/VtrQc0VH1bI\/AAAAAAAACbw\/WDE0AKRIsbo\/s72-c\/data%2Bgo%2Bid.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "5"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-6045195987297525508"
+            },
+            "published": {
+                "$t": "2016-03-05T11:26:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-23T08:04:15.949+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Cara Mengganti Tema Editor Netbeans 8.0.1"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\nKetika sedang Koding, dan sering sekali melakukannya, Anda pasti pernah merasa bahwa, tampilan editor code program pada Netbeans membosankan. Nah bagi Anda yang sudah merasa bosan dengan tampilan Editor Netbeans tersebut dan berniat ingin merubah Tema-nya supaya memberikan suasana berbeda, ikuti petunjuk berikut ini :\n\n\n\n\n\nDownload terlebih dulu tema untuk Netbeans Anda, contohnya di http:\/\/"
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/6045195987297525508\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2014\/10\/cara-mengganti-tema-editor-netbeans-801.html#comment-form",
+                "title": "3 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6045195987297525508"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/6045195987297525508"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2014\/10\/cara-mengganti-tema-editor-netbeans-801.html",
+                "title": "Cara Mengganti Tema Editor Netbeans 8.0.1"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/4.bp.blogspot.com\/-k9iCOuu6I0w\/VE70R-VfHAI\/AAAAAAAABe8\/G8yAHzK3OR0\/s72-c\/ganti%2Btema%2Bnetbeans%2B8.0.1-7.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "3"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-3824130885421560625"
+            },
+            "published": {
+                "$t": "2016-03-04T16:08:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-09-29T20:34:38.571+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "CSS"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "HTML"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Javascript - Mendapatkan Seluruh Properti CSS dari Element"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nKetika sedang dalam proses membuat tools baru dengan menggunakan javascript, saya mendapatkan kendala tentang bagaimana agar ketika sudah mengubah properti css suatu element, nantinya kita bisa mengembalikan lagi ke keadaan semula.\n\n\nCaranya yaitu mendapatkan properti css sebelum dilakukan modifikasi, menyimpannya ke suatu variabel, dan memanggilnya kembali jika dibutuhkan. Namun masalahnya "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/3824130885421560625\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/javascript-mendapatkan-seluruh-properti-css.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3824130885421560625"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/3824130885421560625"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/javascript-mendapatkan-seluruh-properti-css.html",
+                "title": "Javascript - Mendapatkan Seluruh Properti CSS dari Element"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-2116511874000955593"
+            },
+            "published": {
+                "$t": "2016-03-03T14:24:00.000+07:00"
+            },
+            "updated": {
+                "$t": "2016-10-23T07:31:48.560+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Pengertian Data Science - Apa Itu Data Science?"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\n\n\nweb saat ini penuh dengan \"aplikasi berbasis data\". Hampir setiap aplikasi e-commerce merupakan aplikasi berbasis data. Ada database dibalik sebuah front end suatu web, kemudian ada middleware yang menghubungkan ke sejumlah database lain, dan juga layanan data(kredit perusahaan pengolahan kartu, bank, dan sebagainya). Tetapi, jika sekedar menggunakan data, berarti tidak bisa disebut sebagai \""
+            },
+            "link": [{
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2116511874000955593"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/2116511874000955593"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/03\/pengertian-data-science.html",
+                "title": "Pengertian Data Science - Apa Itu Data Science?"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/3.bp.blogspot.com\/-Ly_VnvVaHZE\/VtfhYHe0GzI\/AAAAAAAACbU\/Chqn8LucX0s\/s72-c\/data%2Bscience.png",
+                "height": "72",
+                "width": "72"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-5484965219774203150"
+            },
+            "published": {
+                "$t": "2016-02-19T09:18:00.002+07:00"
+            },
+            "updated": {
+                "$t": "2016-09-29T20:36:09.084+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Javascript"
+            }, {
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "JSON"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Javascript - Menampilkan data JSON ke Tabel HTML"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nDefinisi :\n\n\nJSON adalah singkatan dari JavaScript Object Notation, merupakan format pertukaran data yang ringan dan mudah dibaca atau ditulis manusia, juga mudah dibaca dan dibuat(digenerate) oleh komputer.\n\n\n\n\nPada kesempatan ini, saya akan menjelaskan tentang cara untuk menampilkan data JSON yang masih dalam bentuk object, menjadi data dalam bentuk tabel dalam dokumen html sehingga lebih "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/5484965219774203150\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/02\/javascript-menampilkan-data-json-ke.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5484965219774203150"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/5484965219774203150"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/02\/javascript-menampilkan-data-json-ke.html",
+                "title": "Javascript - Menampilkan data JSON ke Tabel HTML"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "thr$total": {
+                "$t": "0"
+            }
+        }, {
+            "id": {
+                "$t": "tag:blogger.com,1999:blog-1698004972072743037.post-7816411500235477638"
+            },
+            "published": {
+                "$t": "2016-02-08T15:08:00.001+07:00"
+            },
+            "updated": {
+                "$t": "2016-09-29T20:38:45.529+07:00"
+            },
+            "category": [{
+                "scheme": "http://www.blogger.com/atom/ns#",
+                "term": "Umum"
+            }],
+            "title": {
+                "type": "text",
+                "$t": "Cara Mengganti MYSQL Password Koding.com"
+            },
+            "summary": {
+                "type": "text",
+                "$t": "\n\nSaya berpikir untuk segera mengganti password mysql ketika sedang mengakses \nphpmyadmin pada website koding.com tersebut sungguh mudah. Dalam perkiraan saya sebelumnya, untuk mengakses urlnya akan dibutuhkan semacam popup atau formulir tertentu untuk memastikan bahwa yang ingin memasuki bagian itu adalah benar-benar pemilik akun.\n\n\n\n\nTulisan ini saya buat tepat setelah berhasil mencoba "
+            },
+            "link": [{
+                "rel": "replies",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.dhan.web.id\/feeds\/7816411500235477638\/comments\/default",
+                "title": "Post Comments"
+            }, {
+                "rel": "replies",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/02\/cara-mengganti-mysql-password-kodingcom.html#comment-form",
+                "title": "0 Comments"
+            }, {
+                "rel": "edit",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/7816411500235477638"
+            }, {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "http:\/\/www.blogger.com\/feeds\/1698004972072743037\/posts\/default\/7816411500235477638"
+            }, {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http:\/\/www.dhan.web.id\/2016\/02\/cara-mengganti-mysql-password-kodingcom.html",
+                "title": "Cara Mengganti MYSQL Password Koding.com"
+            }],
+            "author": [{
+                "name": {
+                    "$t": "Dhany Nurdiansyah"
+                },
+                "uri": {
+                    "$t": "https:\/\/plus.google.com\/116991456150193857824"
+                },
+                "email": {
+                    "$t": "noreply@blogger.com"
+                },
+                "gd$image": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "\/\/lh6.googleusercontent.com\/-I7uKKFKQFQg\/AAAAAAAAAAI\/AAAAAAAAByI\/Jy_oRCQ6Pzs\/s512-c\/photo.jpg"
+                }
+            }],
+            "media$thumbnail": {
+                "xmlns$media": "http://search.yahoo.com/mrss/",
+                "url": "https:\/\/2.bp.blogspot.com\/-QvseY53Uytw\/VrhH3afYFwI\/AAAAAAAACak\/SYIuhr6TWpY\/s72-c\/koding%2B-%2Bmengganti%2Bpassword%2Bmysql%25281%2529.png",
+                "height": "72",
+                "width": "72"
+            },
+            "thr$total": {
+                "$t": "0"
+            }
+        }]
+    }
+});
