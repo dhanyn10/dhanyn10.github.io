@@ -1,0 +1,173 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Web Tutorial : HTML</title>
+        <!-- Bootstrap -->
+        <link href="../../../data/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../../data/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="lesson1.css" rel="stylesheet"/>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="../../../data/js/jquery.min.js"></script>
+        <script src="../js/js.js"></script>
+        <script src="lesson1.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <a class="navbar-brand" href="#">Web Tutorial</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                            <a href="index.html">Memulai</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tutorial <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Heading</a></li>
+                                <li><a href="#">Font dan Paragraf</a></li>
+                                <li><a href="#">Styles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Tentang</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Bahasa <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h1>Menggunakan Text Formatting dan Paragraf</h1>
+                <p>Anda akan belajar tentang cara menggunakan text formatting dan paragraf. 
+                    text formatting digunakan untuk mengatur format teks, sementara paragraf
+                    digunakan untuk mengatur agar suatu teks ditampilkan seperti sebuah paragraf,
+                    jenis-jenis text formatting yang akan Anda pelajari yaitu 
+                    <b>bold</b>, <i>italic</i>, <u>underline</u>.
+                </p>
+                <hr/>            
+            </div>
+            <div id="bold">
+                <div class="col-sm-12">
+                    <p>Untuk membuat text formatting bold, buat suatu teks agar diapit oleh tag bold, 
+                        contohnya adalah seperti ini: <code>&lt;b&gt;text&lt;/b&gt;</code>
+                        Sekarang buatlah teks "myBold" menjadi bold pada kalimat di bawah ini</p>
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="asalkode-bold" class="asalkode form-control col-sm-12">Seperti diketahui oleh publik bahwa myBold dari Web Tutorial kini semakin terkenal</textarea>
+                </div>
+                <div class="col-sm-6">
+                    <p id="hasilkode-bold" class="hasilkode col-sm-12"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default lewati">Lewati</button>
+                </div>
+            </div>
+            <div id="italic">
+                <div class="col-sm-12">
+                    <p>Selanjutnya buat teks "The Italic" menjadi italic, petunjuk penggunaan : <code>&lt;i&gt;text&lt/i&gt;</code></p>
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="asalkode-italic" class="asalkode form-control col-sm-12">CEO The Italic diketahui hendak menggelar lomba di Web Tutorial 1 minggu lagi</textarea>
+                </div>
+                <div class="col-sm-6">
+                    <p id="hasilkode-italic" class="hasilkode col-sm-12"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default lewati">Lewati</button>
+                </div>
+            </div>
+            <div id="underline">
+                <div class="col-sm-12">
+                    <p>coba untuk menerapkan underline kepada kata "percobaan teknologi baru", petunjuk penggunaan : <code>&lt;u&gt;text&lt/u&gt;</code></p>
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="asalkode-underline" class="asalkode form-control col-sm-12">Web Tutorial menjadi pusat percobaan teknologi baru demi kemajuan dunia</textarea>
+                </div>
+                <div class="col-sm-6">
+                    <p id="hasilkode-underline" class="hasilkode col-sm-12"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default lewati">Lewati</button>
+                </div>
+            </div>
+            <div id="paragraf">
+                <div class="col-sm-12">
+                    <p>Selanjutnya Anda akan mencoba menggunakan fungsi paragraf, 
+                    caranya adalah dengan mengapit suatu kalimat atau kata dengan tag p
+                    seperti ini : <code>&lt;p&gt;long text&lt;/p&gt;</code></p>
+                    <p>Pada uji coba kali ini, buat teks dibawah ini menjadi beberapa paragraf dengan 
+                    batasan yang telah ditentukan di tabel berikut</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Kalimat</th>
+                            <th>paragraf ke</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Maecenas mattis mattis diam eget posuere.</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="asalkode-paragraf" class="asalkode form-control col-sm-12">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Curabitur nunc elit, feugiat ac sollicitudin eu, venenatis id tortor.
+Maecenas mattis mattis diam eget posuere.</textarea>
+                </div>
+                <div class="col-sm-6">
+                    <p id="hasilkode-paragraf" class="hasilkode col-sm-12"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default lewati">Lewati</button>
+                </div>
+            </div>
+            <div id="lesson1-selesai" class="col-sm-12">
+                <p>Sekarang Anda telah berhasil mempelajari beberapa text formatting, lanjutkan ke tutorial selanjutnya</p>
+                <a class="btn btn-success" href="lesson2.html">lanjut ke tutorial berikutnya !</a>
+            </div>
+        </div>
+        <!-- Inclu<code>&lt;i&gtfont;&lt;/i&gt;</code>de all compiled plugins (below), or include individual files as needed -->
+        <script src="../../../data/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
