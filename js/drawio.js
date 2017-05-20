@@ -1,0 +1,1 @@
+https://gist.githubusercontent.com/dhanyn10/104c1afaaee44aec3ad7b606eecc195c/raw/a0e912b05237101d5708dc120f47ddee4b5da45e/drawio.js
